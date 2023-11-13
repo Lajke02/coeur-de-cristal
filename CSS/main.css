@@ -1,0 +1,35 @@
+/* header*/
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: gray;
+}
+.nav.icon a {
+}
+
+.mainmenu {
+  padding: 20px;
+}
+.mainmenu a {
+  margin-left: 10rem;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: 400;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* maincontent */
+.content-btn {
+  display: inline-block;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  border: 2px solid black;
+  padding: 12px 25px;
+  text-decoration: none;
+}
