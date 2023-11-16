@@ -1,35 +1,85 @@
 /* header*/
+
+header {
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
 .navigation {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 20px;
   overflow: hidden;
   background-color: gray;
 }
-.nav.icon a {
+.nav-icon {
+  margin-right: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.42s ease;
 }
 
 .mainmenu {
-  padding: 20px;
+  padding: 40px;
+  background-color: white;
 }
 .mainmenu a {
-  margin-left: 10rem;
   text-align: center;
   position: relative;
   text-decoration: none;
   color: darkgreen;
   font-weight: 400;
   font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  margin-left: 150px;
+  transition: all 0.42s ease;
 }
 
 /* maincontent */
+section {
+  padding: 5% 10%;
+}
 .content-btn {
   display: inline-block;
-  color: black;
+  color: white;
   font-size: 14px;
   font-weight: 500;
   font-family: "Karla", sans-serif;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 12px 25px;
   text-decoration: none;
+}
+
+.content-btn:hover {
+  background-color: gold;
+  color: white;
+}
+
+.main-content {
+  background-color: darkgreen;
+  width: 40%;
+  height: 400px;
+}
+
+.content-text h1 {
+  color: gold;
+  font-size: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+}
+
+.content-text h5 {
+  color: white;
+  font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  line-height: 0px;
+}
+
+.content-text {
 }
