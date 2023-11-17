@@ -1,3 +1,5 @@
+/* Homepage*/
+
 /* header*/
 
 header {
@@ -12,16 +14,24 @@ header {
 .navigation {
   list-style-type: none;
   margin: 0;
-  padding: 20px;
+  padding: 0px;
   overflow: hidden;
-  background-color: gray;
+  background-color: lightgray;
 }
+
+#Logo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  position: relative;
+}
+
 .nav-icon {
-  margin-right: 30px;
+  margin-right: 10px;
   color: white;
   font-size: 18px;
   font-weight: 400;
-  transition: all 0.42s ease;
 }
 
 .mainmenu {
@@ -29,20 +39,19 @@ header {
   background-color: white;
 }
 .mainmenu a {
-  text-align: center;
   position: relative;
   text-decoration: none;
   color: darkgreen;
   font-weight: 400;
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
-  margin-left: 150px;
-  transition: all 0.42s ease;
+  margin-left: 70px;
+  margin-right: 50px;
 }
 
 /* maincontent */
 section {
-  padding: 5% 10%;
+  padding: 5% 20%;
 }
 .content-btn {
   display: inline-block;
@@ -53,6 +62,8 @@ section {
   border: 2px solid white;
   padding: 12px 25px;
   text-decoration: none;
+  position: relative;
+  bottom: -50px;
 }
 
 .content-btn:hover {
@@ -63,23 +74,157 @@ section {
 .main-content {
   background-color: darkgreen;
   width: 40%;
-  height: 400px;
+  height: 370px;
 }
 
 .content-text h1 {
   color: gold;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 200;
 }
 
 .content-text h5 {
+  line-height: 0.1;
   color: white;
-  font-size: 20px;
-  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
   font-weight: 200;
-  line-height: 0px;
+  position: relative;
+  bottom: -40px;
 }
 
-.content-text {
+#campaign {
+  width: 80%;
+  height: 500px;
+  position: relative;
+  top: -280px;
+  left: 620px;
+}
+
+/* Content 2 */
+.content2-btn {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  border: 2px solid white;
+  padding: 12px 25px;
+  text-decoration: none;
+  position: relative;
+  bottom: -200px;
+  margin-left: -80px;
+}
+
+.content2-btn:hover {
+  background-color: gold;
+  color: white;
+}
+
+.content2-text h1 {
+  color: white;
+  font-size: 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  position: relative;
+  margin-left: -80px;
+}
+
+.content2 {
+  background-color: black;
+  width: 30%;
+  height: 330px;
+  float: right;
+  right: 0px;
+  position: relative;
+  bottom: -70px;
+}
+
+#goldbox {
+  background-color: gold;
+  width: 30%;
+  height: 458px;
+  float: left;
+  position: relative;
+  bottom: -70px;
+  margin-left: 0px;
+}
+
+/* Content 3 */
+.content3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 120px;
+  position: relative;
+  bottom: -70px;
+}
+
+.c3 img {
+  width: 100%;
+  height: auto;
+}
+
+.c3text {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.content3-btn {
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+  margin-left: 7rem;
+}
+
+/* Content 4 */
+
+.content4 {
+  background-color: gold;
+  width: 20%;
+  height: 250px;
+  position: relative;
+  bottom: -70px;
+}
+
+.content4-btn {
+  display: inline-block;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  border: 2px solid black;
+  padding: 12px 25px;
+  text-decoration: none;
+  position: relative;
+  bottom: -140px;
+  left: -200px;
+}
+
+.content4-text h1 {
+  font-size: 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+  position: relative;
+  left: -200px;
+}
+
+.gift {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  bottom: 180px;
+  left: 510px;
+}
+
+#greenbox {
+  background-color: darkgreen;
+  width: 100%;
+  height: 380px;
+  position: relative;
+  bottom: 565px;
+  left: 768px;
 }
