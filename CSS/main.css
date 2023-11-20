@@ -204,6 +204,10 @@ section {
   left: -200px;
 }
 
+.content4-btn:hover {
+  background-color: white;
+}
+
 .content4-text h1 {
   font-size: 25px;
   font-family: "Cormorant Garamond", serif;
@@ -227,4 +231,93 @@ section {
   position: relative;
   bottom: 565px;
   left: 768px;
+}
+
+/* Footer */
+
+footer {
+  padding: 30px;
+  background-color: lightgrey;
+  position: relative;
+  bottom: -170px;
+}
+
+#logofooter {
+  display: flex;
+  margin-left: 40%;
+  width: 20%;
+  position: relative;
+  bottom: 100px;
+}
+
+#credit {
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+}
+
+.latest {
+  float: right;
+  position: relative;
+  bottom: 70px;
+  margin-right: 40px;
+}
+
+.latest h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+}
+
+.latest h5 {
+  line-height: 0.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+#mail {
+  padding: 10px 80px;
+  color: black;
+}
+
+.footer-btn {
+  position: relative;
+  bottom: -20px;
+  font-family: "Lato", sans-serif;
+  color: grey;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.socials {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  bottom: -170px;
+}
+
+.finfo {
+  display: flex;
+  position: relative;
+  bottom: -90px;
+  margin-left: -20px;
+}
+
+.row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+li {
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
 }
