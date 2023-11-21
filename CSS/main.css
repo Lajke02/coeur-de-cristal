@@ -323,3 +323,34 @@ li {
 }
 
 /*Detaile Page*/
+.menuforthepreviouspage {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nacklaceimg-container {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  margin-right: 15px;
+}
+.nacklaceimg-container img {
+  width: 50%;
+  margin-bottom: 0px;
+}
+.text-container {
+  margin-bottom: 300px;
+}
+.extraproducts-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+figure {
+  margin-left: 0;
+}
+.extraproducts-container img {
+  width: 80%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
