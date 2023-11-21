@@ -251,8 +251,8 @@ footer {
 }
 
 #credit {
+  position: left;
   text-align: center;
-  position: relative;
   bottom: -10px;
 }
 
@@ -294,7 +294,7 @@ footer {
   font-size: 30px;
   font-weight: 400;
   position: relative;
-  bottom: -170px;
+  bottom: -140px;
 }
 
 .finfo {
