@@ -14,7 +14,7 @@ header {
   margin: 0;
   padding: 0px;
   overflow: hidden;
-  background-color: lightgray;
+  background-color: #d9d9d9;
 }
 
 #Logo {
@@ -65,7 +65,7 @@ header {
   position: relative;
   list-style: none;
   text-decoration: none;
-  color: darkgreen;
+  color: #0f420e;
   font-weight: 400;
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
@@ -160,12 +160,21 @@ section {
 }
 
 .content-btn:hover {
-  background-color: gold;
+  background-color: #d6a142;
   color: white;
 }
 
+<<<<<<< HEAD
+=======
+.main-content {
+  background-color: #0f420e;
+  width: 40%;
+  height: 370px;
+}
+
+>>>>>>> cc823dee249ffd1d4e1e495de9d7dc86a526b9a6
 .content-text h1 {
-  color: gold;
+  color: #d6a142;
   font-size: 40px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 200;
@@ -211,7 +220,7 @@ section {
 }
 
 .content2-btn:hover {
-  background-color: gold;
+  background-color: #d6a142;
   color: white;
 }
 
@@ -235,7 +244,7 @@ section {
 }
 
 #goldbox {
-  background-color: gold;
+  background-color: #d6a142;
   width: 30%;
   height: 458px;
   float: left;
@@ -276,7 +285,7 @@ section {
 /* Content 4 */
 
 .content4 {
-  background-color: gold;
+  background-color: #d6a142;
   width: 20%;
   height: 250px;
   position: relative;
@@ -318,7 +327,7 @@ section {
 }
 
 #greenbox {
-  background-color: darkgreen;
+  background-color: #0f420e;
   width: 100%;
   height: 380px;
   position: relative;
@@ -330,7 +339,7 @@ section {
 
 footer {
   padding: 30px;
-  background-color: lightgrey;
+  background-color: #d9d9d9;
   position: relative;
   bottom: -170px;
 }
@@ -413,4 +422,133 @@ h4 {
 li {
   font-family: "Karla", sans-serif;
   font-size: 15px;
+}
+
+/* Product Page & Shopping bag*/
+
+.category-options-jewels {
+  background-color: #d9d9d9;
+  display: flex;
+}
+
+figure {
+  margin-left: 0%;
+  padding-left: 0%;
+  max-width: 20%;
+  min-width: ;
+}
+
+.options {
+  min-width: 20%;
+}
+
+.title-card-category {
+  border-top: solid #d9d9d9 10px;
+  padding-top: 2%;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding-left: 0%;
+  color: black;
+  padding-bottom: 0%;
+  font-family: "Karla", sans-serif;
+  font-size: small;
+  padding-top: 0%;
+}
+
+.header {
+  padding-top: 2%;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+}
+
+.choose-jewelry {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.orderreview-header {
+  padding-top: 2%;
+  font-family: "Cormorant Garamond", serif;
+  padding-left: 4rem;
+}
+
+.checkout-btn {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  border: 2px solid black;
+  padding: 12px 25px;
+  position: relative;
+  bottom: -50px;
+}
+
+.checkout-btn:hover {
+  background-color: #d6a142;
+  color: black;
+}
+
+.shoppingbag-orderreview {
+  border-top: solid #d9d9d9;
+  padding-left: 4rem;
+  display: flex;
+  margin-left: 4rem;
+}
+
+.square-order {
+  border: solid black;
+  padding-top: 0%;
+  padding-bottom: 10%;
+  padding-left: 0%;
+  padding-right: 0%;
+  min-width: 100px;
+  max-width: 400px;
+  text-align: center;
+  margin-right: 4rem;
+}
+
+.add-more-to-bag {
+  border-top: solid #d9d9d9;
+  display: flex;
+}
+
+/*Detaile Page*/
+.menuforthepreviouspage {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nacklaceimg-container {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  margin-right: 15px;
+}
+.nacklaceimg-container img {
+  width: 50%;
+  margin-bottom: 0px;
+}
+.text-container {
+  margin-bottom: 300px;
+}
+.extraproducts-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+figure {
+  margin-left: 0;
+}
+.extraproducts-container img {
+  width: 80%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
