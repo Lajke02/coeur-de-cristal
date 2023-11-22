@@ -365,7 +365,9 @@ figure {
 
 .choose-jewelry {
   display: grid;
-  grid-template-rows: 2fr;
+  grid-template-columns: repeat(5, 1fr);
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .orderreview-header {
