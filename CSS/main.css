@@ -521,6 +521,18 @@ figure {
 }
 
 /*Detaile Page*/
+.costofproduct {
+  color: white;
+  text-align: center;
+  border: 15px solid#000000;
+  background-color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  width: 300px;
+  float: left;
+}
+
 .menuforthepreviouspage {
   display: flex;
   list-style: none;
@@ -548,7 +560,7 @@ figure {
   margin-left: 0;
 }
 .extraproducts-container img {
-  width: 80%;
+  width: 230px;
   margin-left: 5px;
   margin-right: 5px;
 }
