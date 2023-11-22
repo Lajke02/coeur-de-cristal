@@ -322,7 +322,6 @@ li {
   font-size: 15px;
 }
 
-<<<<<<< HEAD
 /* Product Page & Shopping bag*/
 
 .category-options-jewels {
@@ -366,7 +365,9 @@ figure {
 
 .choose-jewelry {
   display: grid;
-  grid-template-rows: 2fr;
+  grid-template-columns: repeat(5, 1fr);
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .orderreview-header {
@@ -416,7 +417,6 @@ figure {
   border-top: solid #d9d9d9;
   display: flex;
 }
-=======
 
 /*Detaile Page*/
 .menuforthepreviouspage {
@@ -449,5 +449,4 @@ figure {
   width: 80%;
   margin-left: 5px;
   margin-right: 5px;
->>>>>>> e0b0aabdfb72260af11cffd4efb268e23ac36b6e
 }
