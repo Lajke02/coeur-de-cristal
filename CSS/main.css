@@ -1,7 +1,6 @@
 /* Homepage*/
 
 /* header*/
-
 header {
   top: 0;
   right: 0;
@@ -10,7 +9,6 @@ header {
   justify-content: space-between;
   padding: 20px 10%;
 }
-
 .navigation {
   list-style-type: none;
   margin: 0;
@@ -21,10 +19,10 @@ header {
 
 #Logo {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   width: 10%;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-icon {
@@ -34,19 +32,114 @@ header {
   font-weight: 400;
 }
 
-.mainmenu {
-  padding: 40px;
-  background-color: white;
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #Logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .nav-icon {
+    margin-right: 0;
+    margin-top: 10px;
+    font-size: 16px;
+  }
 }
-.mainmenu a {
+
+/* navigation menu */
+
+.navbar {
+  padding: 10px;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+.navbar a {
   position: relative;
+  list-style: none;
   text-decoration: none;
   color: #0f420e;
   font-weight: 400;
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
-  margin-left: 70px;
-  margin-right: 50px;
+}
+
+.search {
+  display: none;
+}
+
+#toggler,
+input,
+label,
+i {
+  display: none;
+}
+
+.menu-phone {
+  display: none;
+}
+
+/* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .search {
+    display: block;
+  }
+
+  .search input {
+    width: 400px;
+    padding: 10px;
+    margin-right: 5px;
+  }
+
+  .search button {
+    padding: 5px 10px;
+  }
+
+  label {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #toggler,
+  input,
+  label,
+  i {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  #toggler:checked ~ .menu-phone {
+    display: block;
+  }
+
+  .menu-phone ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    margin-top: 10px;
+  }
+
+  .menu-phone ul li {
+    padding: 10px;
+  }
+
+  .menu-phone ul li a {
+    color: darkgreen;
+    text-decoration: none;
+  }
 }
 
 /* maincontent */
@@ -71,13 +164,13 @@ section {
   color: white;
 }
 
-.main-content {
+<<<<<<< HEAD ======= .main-content {
   background-color: #0f420e;
   width: 40%;
   height: 370px;
 }
 
-.content-text h1 {
+>>>>>>>cc823dee249ffd1d4e1e495de9d7dc86a526b9a6 .content-text h1 {
   color: #d6a142;
   font-size: 40px;
   font-family: "Cormorant Garamond", serif;
@@ -96,10 +189,16 @@ section {
 
 #campaign {
   width: 80%;
-  height: 500px;
+  height: 499px;
   position: relative;
   top: -280px;
   left: 620px;
+}
+
+.main-content {
+  background-color: darkgreen;
+  width: 40%;
+  height: 370px;
 }
 
 /* Content 2 */
@@ -165,7 +264,7 @@ section {
   height: auto;
 }
 
-.c3text {
+.c3 h2 {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
