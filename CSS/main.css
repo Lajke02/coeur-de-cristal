@@ -565,11 +565,6 @@ button {
     display: flex;
   }
 
-  button .down-arrow {
-    background-color: none;
-    border-radius: none;
-  }
-
   .socials a {
     position: relative;
     bottom: 30px;
@@ -591,7 +586,6 @@ button {
     margin-right: auto;
     margin-left: auto;
   }
-
   .down-arrow {
     background-color: none;
     color: none;
@@ -600,6 +594,7 @@ button {
     padding: 4px;
   }
 
+  /* the following 11 lines of code was adapted from ChatGPT Accessed 2023-11-28 */
   .down-arrow i {
     transform: rotate(0deg);
     transition: transform 0.3s ease;
@@ -607,6 +602,31 @@ button {
 
   .row.active .down-arrow i {
     transform: rotate(180deg);
+  }
+
+  .finfo .row {
+    cursor: pointer;
+  }
+
+  .finfo .row.active .panel {
+    display: block;
+  }
+
+  /* the following 6 lines of code was adapted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown Accessed 2023-11-28*/
+  .panel {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .panel li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
   }
 }
 /* Product Page & Shopping bag*/
