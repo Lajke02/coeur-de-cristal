@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coeur de Cristal</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -16,7 +17,6 @@
       href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Quicksand&display=swap"
       rel="stylesheet"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,7 +32,6 @@
     />
   </head>
   <body>
-
     <header class="navigation">
       <img id="Logo" src="img/logo.png" alt="Logo" />
 
@@ -44,142 +43,234 @@
       </div>
     </header>
 
-    <div class="mainmenu">
-      <a href="#"><i class="bx bx-search"></i></a>
-      <a href="index.html">HOME</a>
-      <a href="productpage.html">JEWELS</a>
-      <a href="#">ABOUT</a>
-      <a href="#">NEW ARRIVALS</a>
-      <a href="#">BEST SELLERS</a>
+    <section class="menu">
+      <nav class="navbar">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a href="index.html">HOME</a>
+        <a href="productpage.html">JEWELS</a>
+        <a href="#">ABOUT</a>
+        <a href="#">NEW ARRIVALS</a>
+        <a href="#">BEST SELLERS</a>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </div>
+
+      <input type="checkbox" id="toggler" />
+      <label for="toggler"><i class="bx bx-chevron-down"></i></label>
+
+      <div class="menu-phone">
+        <ul>
+          <li><a href="practice.html">HOME</a></li>
+          <li><a href="#">JEWELS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">NEW ARRIVALS</a></li>
+          <li><a href="#">BEST SELLERS</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="titlespace">
+      <h3 class="category-title">Shop by Category</h3>
+      <h5 class="italic-description">
+        Showcases creativity and unparalleled design at its best.
+      </h5>
+    </section>
+
+    <div class="category-slider">
+      <a href="productpage.html" class="categories">
+        <img
+          class="categoryimg"
+          src="img/necklaces.png"
+          alt="Title picture with gold necklaces."
+        />
+        <h6 class="activetext">Necklaces</h6>
+      </a>
+
+      <a href="#" class="categories">
+        <img
+          class="categoryimg"
+          src="img/rings.png"
+          alt="Title pciture of rings."
+        />
+        <h6>Rings</h6>
+      </a>
+
+      <a href="#" class="categories">
+        <img
+          class="categoryimg"
+          src="img/earrings.png"
+          alt="Title picture of earrings."
+        />
+        <h6>Earrings</h6>
+      </a>
+
+      <a href="#" class="categories">
+        <img
+          class="categoryimg"
+          src="img/bracelets.png"
+          alt="Title picture of bracelets."
+        />
+        <h6>Bracelets</h6>
+      </a>
+
+      <a href="#" class="categories">
+        <img
+          class="categoryimg"
+          src="img/watches.png"
+          alt="Title picture of watches."
+        />
+        <h6>Watches</h6>
+      </a>
     </div>
 
-    <section class="title-card-category">
-        <h3>Shop by Category</h3>
-        <p>Showcases creativity and unparalleled design at its best</p>
-    </section>
-    
-    <section class="category-options-jewels">
-        <a href="productpage.html">
-            <figure class="options">
-                <img src="img/necklaces.png" alt="Picture of rosegold necklaces.">
-                <figcaption>Necklaces</figcaption>
-            </figure>
-        </a>
-
-        <a href="#">
-            <figure class="options">
-                <img src="img/rings.png" alt="Picture of gold rings.">
-                <figcaption>Rings</figcaption>
-            </figure>
-        </a>
-
-        <a href="#">
-            <figure class="options">
-                <img src="img/earrings.png" alt="Picture of a pair of rosegold earrings.">
-                <figcaption>Earrings</figcaption>
-            </figure>
-        </a>
-
-        <a href="#">
-            <figure class="options">
-                <img src="img/bracelets.png" alt="Picture of several silver bracelets.">
-                <figcaption>Bracelets</figcaption>
-            </figure>
-        </a>
-
-        <a href="#">
-            <figure class="options">
-                <img src="img/watches.png" alt="Picture of several wristwatches.">
-                <figcaption>Watches</figcaption>
-            </figure>
-        </a>
-    </section>
-
-<Section class="breadcrumbs">
-    <a href="index.html">
+    <div class="breadcrumbs">
+      <a href="index.html">
         <p>Home</p>
-    </a>
-    <a href="productpage.html">
+      </a>
+      <a href="productpage.html">
         <p>/Designer jewelry</p>
-    </a>
-</Section>
-<h2 class="header">Necklaces</h2>
-<section class="choose-jewelry">
-    <a href="#">
-        <figure>
-            <img src="img/gold-necklace-1.png" alt="Picture of gold necklace.">
-            <figcaption>Bijou Brilliant NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/gold-necklace-2.png" alt="Picture of a gold necklace.">
-            <figcaption>Perles de Rêve NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/silver-necklace-1.png" alt="Picture of a silver necklace.">
-            <figcaption>Charme Celeste NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/silver-necklace-2.png" alt="Picture of a silver necklace.">
-            <figcaption>Éclat d’Amour NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/silver-necklace-3.png" alt="Picture of a silver necklace.">
-            <figcaption>Nuit Étoilée NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/rosegold-necklace-1.png" alt="Picture of a rosegold necklace.">
-            <figcaption>Joyau Précieux NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/rosegold-necklace-2.png" alt="Picture of a rosegold necklace.">
-            <figcaption>Charme de Saphir NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="detailpage.html">
-        <figure>
-            <img src="img/necklace-detail-3.jpg" alt="Picture of a rosegold necklace.">
-            <figcaption>Coeur d’Amour NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/necklaces.png" alt="Picture of a rosegold necklace.">
-            <figcaption>Charme de Rose</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/rosegold-necklace-2.png" alt="Picture of a rosegold necklace.">
-            <figcaption>Merveille Rose</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
+      </a>
+    </div>
 
-</section>
+    <section class="necklacespace">
+      <h3 class="category-title">Necklaces</h3>
+    </section>
+
+    <div class="necklacecolumns">
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/gold-necklace-1.png"
+            alt="Picture of gold necklace."
+          />
+          <figcaption class="productname">Bijou Brilliant NECKLACE</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/gold-necklace-2.png"
+            alt="Picture of gold necklace."
+          />
+          <figcaption class="productname">Perles de Rêve NECKLACE</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/silver-necklace-1.png"
+            alt="Picture of a silver necklace."
+          />
+          <figcaption class="productname">Charme Celeste NECKLACE</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/silver-necklace-2.png"
+            alt="Picture of a silver necklace."
+          />
+          <figcaption class="productname">Éclat d’Amour NECKLACE</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/silver-necklace-3.png"
+            alt="Picture of a silver necklace."
+          />
+          <figcaption class="productname">Nuit Étoilée NECKLACE</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/rosegold-necklace-1.png"
+            alt="Picture of a rosegold necklace."
+          />
+          <figcaption class="productname">Joyau Précieux NECKLACE</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/rosegold-necklace-2.png"
+            alt="Picture of a rosegold necklace."
+          />
+          <figcaption class="productname">Charme de Saphir NECKLACE</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="detailpage.html" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/necklace-detail-3.jpg"
+            alt="Picture of a rosegold necklace."
+          />
+          <figcaption class="productname">Coeur d’Amour NECKLACE</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/necklaces.png"
+            alt="Picture of rosegold necklace."
+          />
+          <figcaption class="productname">Charme de Rose</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="necklaceimage">
+        <figure>
+          <figcaption class="new-text">NEW</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/rosegold-necklace-2.png"
+            alt="Picture of rosegold necklace."
+          />
+          <figcaption class="productname">Merveille Rose</figcaption>
+          <figcaption class="pricetag">$100.00</figcaption>
+        </figure>
+      </a>
+    </div>
 
     <footer>
-
       <div class="finfo">
         <ul class="row">
           <h4>CLIENT CARE</h4>
@@ -188,9 +279,9 @@
           <li>Shipping & Returns</li>
           <li>Frequently Asked Questions</li>
           <li>Schedule an Appointment</li>
-          </ul>
+        </ul>
 
-          <ul class="row">
+        <ul class="row">
           <h4>ABOUT US</h4>
           <li>Origins</li>
           <li>Our Purposes</li>
@@ -199,17 +290,16 @@
           <li>Website Policies</li>
         </ul>
 
-          <ul class="row">
+        <ul class="row">
           <h4>MATERIAL CARE</h4>
           <li>Jewelry Repair</li>
           <li>Ring Sizing</li>
           <li>Metal Allergy Resources</li>
-          <li>Styling Tips<li>
+          <li>Styling Tips</li>
+          <li></li>
         </ul>
       </div>
-    </div>
-      
-      
+
       <div class="latest">
         <h2>Latest from us</h2>
         <h5>Be the first to know about exciting new designs,</h5>
