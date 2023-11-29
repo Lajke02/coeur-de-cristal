@@ -900,8 +900,17 @@ figure {
 .extraproducts-container img {
   width: 230px;
 }
-.extraproductscontainer-figcaption {
+.linkforextraproducts {
   color: rgb(0, 0, 0);
   text-decoration: none;
+}
+.costof-extraproduct {
   font-family: "karla", sans-serif;
+  font-size: 16px;
+  color: rgb(138, 138, 138);
+}
+
+.extraproductscontainer-figcaption {
+  font-family: "karla", sans-serif;
+  font-size: 16px;
 }
