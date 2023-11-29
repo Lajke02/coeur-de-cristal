@@ -2,15 +2,6 @@
 
 /* header*/
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
-  .nav-icon {
-    margin-top: 10px;
-  }
-  .nav-icon a {
-    font-size: 16px;
-  }
-}
-
 header {
   display: flex;
   align-items: center;
@@ -35,6 +26,19 @@ header {
   font-size: 24px;
   font-weight: 400;
 }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .nav-icon {
+    margin-top: 10px;
+  }
+  .nav-icon a {
+    font-size: 16px;
+  }
+  #Logo {
+    width: 30%;
+    left: -30px;
+  }
+}
+
 /* navigation menu */
 
 .navbar {
@@ -94,7 +98,7 @@ i {
     padding: 4px 4px;
     position: absolute;
     right: 45px;
-    top: 110px;
+    top: 135px;
     background: none;
     font-size: 20px;
     border: none;
@@ -109,7 +113,7 @@ i {
     font-weight: 500;
     position: absolute;
     left: 18px;
-    top: 100px;
+    top: 125px;
     color: #d9d9d9;
   }
 
@@ -543,11 +547,15 @@ button {
   display: none;
 }
 
+.subscribe {
+  display: none;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   .row {
     flex: 1 1 100%;
     margin-right: 0;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
   footer {
     margin-top: 380px;
@@ -573,18 +581,25 @@ button {
     margin-left: 20px;
   }
   .latest {
-    display: none;
+    display: block;
+    position: relative;
+    left: 0px;
   }
+  .latest h2 {
+    font-size: 20px;
+  }
+
   #logofooter {
     float: right;
-    bottom: 160px;
-    right: 0px;
-    width: 50%;
+    right: -20px;
+    width: 60%;
+    bottom: 400px;
   }
   #credit {
     position: relative;
     margin-right: auto;
     margin-left: auto;
+    bottom: 0px;
   }
   .down-arrow {
     background-color: none;
