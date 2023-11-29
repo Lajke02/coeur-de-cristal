@@ -26,7 +26,7 @@ header {
   font-size: 24px;
   font-weight: 400;
 }
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   .nav-icon {
     margin-top: 10px;
   }
@@ -79,7 +79,7 @@ i {
 }
 
 /* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   .navbar {
     display: none;
     padding: 2px;
@@ -204,7 +204,7 @@ section {
   right: 8px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   #campaign {
     width: 45%;
     height: 410px;
@@ -281,7 +281,7 @@ section {
   bottom: -70px;
   margin-left: 0px;
 }
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   #goldbox {
     width: 10%;
     height: 370px;
@@ -306,7 +306,7 @@ section {
   .content2-text h1 {
     font-size: 30px;
     position: relative;
-    left: 50px;
+    left: 70px;
   }
 }
 
@@ -344,7 +344,7 @@ section {
   color: #000000;
   font-size: 16px;
 }
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   .content3 {
     grid-template-columns: 1fr;
     grid-gap: 40px;
@@ -408,7 +408,7 @@ section {
   bottom: 0px;
   right: -550px;
 }
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   #greenbox {
     width: 100%;
     height: 20px;
@@ -554,7 +554,7 @@ button {
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   .row {
     flex: 1 1 100%;
     margin-right: 0;
