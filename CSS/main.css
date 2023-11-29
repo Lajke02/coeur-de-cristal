@@ -584,9 +584,13 @@ button {
     display: block;
     position: relative;
     left: 0px;
+    bottom: 20px;
   }
   .latest h2 {
     font-size: 20px;
+  }
+  .latest h5 {
+    font-size: 16px;
   }
 
   #logofooter {
