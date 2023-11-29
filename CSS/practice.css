@@ -1,0 +1,198 @@
+/* Footer */
+
+footer {
+  padding: 30px;
+  background-color: #d9d9d9;
+  position: relative;
+  bottom: -170px;
+  margin: 0;
+  width: auto;
+}
+
+#logofooter {
+  display: flex;
+  margin-left: 40%;
+  width: 20%;
+  position: relative;
+  bottom: 20px;
+}
+
+#credit {
+  text-align: center;
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+  left: 0px;
+}
+
+.latest {
+  float: right;
+  position: relative;
+  bottom: 40px;
+  right: 20px;
+}
+
+.latest h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+}
+
+.latest h5 {
+  line-height: 0.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.mail {
+  display: block;
+  padding: 7px 80px;
+  color: black;
+}
+
+.mail input {
+  width: 400px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.footer-btn {
+  position: relative;
+  bottom: -20px;
+  font-family: "Lato", sans-serif;
+  color: grey;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.socials a {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+}
+.socials {
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+}
+
+.finfo {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 20px;
+}
+
+.row {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  margin-right: 20px;
+  flex: 1 1 10%;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+li {
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+}
+
+button {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .row {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 0px;
+  }
+  footer {
+    margin-top: 380px;
+  }
+  .row li {
+    display: none;
+  }
+  button,
+  .down-arrow i {
+    display: block;
+    color: black;
+  }
+  h4,
+  button .down-arrow i {
+    display: flex;
+  }
+
+  button .down-arrow {
+    background-color: none;
+    border-radius: none;
+  }
+
+  .socials a {
+    position: relative;
+    bottom: 30px;
+    font-size: 40px;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .latest {
+    display: none;
+  }
+  #logofooter {
+    float: right;
+    bottom: 160px;
+    right: 0px;
+    width: 50%;
+  }
+  #credit {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .finfo .panel {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+  .down-arrow i {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .open .down-arrow i {
+    transform: rotate(0);
+  }
+}
+
+/* View your order Pop-up */
+.pop-up {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.1);
+  visibility: hidden;
+  text-align: center;
+  padding: 70px 70px;
+  color: darkgreen;
+  transition: transform 0.5s all ease;
+}
+.opened-popup {
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+  opacity: 1;
+  top: 50%;
+  transition: transform 0.5s all ease;
+}
