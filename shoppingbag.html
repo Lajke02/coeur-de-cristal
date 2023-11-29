@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coeur de Cristal</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -14,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Quicksand&display=swap"
-      rel="stylesheet"/>
-
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,7 +32,6 @@
     />
   </head>
   <body>
-
     <header class="navigation">
       <img id="Logo" src="img/logo.png" alt="Logo" />
 
@@ -43,95 +43,152 @@
       </div>
     </header>
 
-    <div class="mainmenu">
-      <a href="#"><i class="bx bx-search"></i></a>
-      <a href="index.html">HOME</a>
-      <a href="productpage.html">JEWELS</a>
-      <a href="#">ABOUT</a>
-      <a href="#">NEW ARRIVALS</a>
-      <a href="#">BEST SELLERS</a>
+    <section class="menu">
+      <nav class="navbar">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a href="index.html">HOME</a>
+        <a href="productpage.html">JEWELS</a>
+        <a href="#">ABOUT</a>
+        <a href="#">NEW ARRIVALS</a>
+        <a href="#">BEST SELLERS</a>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </div>
+
+      <input type="checkbox" id="toggler" />
+      <label for="toggler"><i class="bx bx-chevron-down"></i></label>
+
+      <div class="menu-phone">
+        <ul>
+          <li><a href="practice.html">HOME</a></li>
+          <li><a href="#">JEWELS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">NEW ARRIVALS</a></li>
+          <li><a href="#">BEST SELLERS</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="breadcrumbs">
+      <a href="index.html">
+        <p>Home</p>
+      </a>
+      <a href="productpage.html">
+        <p>/Designer jewelry</p>
+      </a>
+      <a href="productpage.html">
+        <p>/Necklaces</p>
+      </a>
+      <a href="detailpage.html">
+        <p>/Details</p>
+      </a>
     </div>
 
-<Section class="breadcrumbs">
-    <a href="index.html">
-        <p>Home</p>
-    </a>
-    <a href="productpage.html">
-        <p>/Designer jewelry</p>
-    </a>
-    <a href="productpage.html">
-      <p>/Necklaces</p>
-    </a>
-    <a href="detailpage.html">
-      <p>/Details</p>
-    </a>
-</Section>
+    <div id="square-order">
+      <h4 id="smallordertitle">Order Review</h4>
+      <div id="item">
+        <h6 class="sample">1 Sample Item</h6>
+        <h6 class="hundred">$100</h6>
+      </div>
+      <div id="pricepoint">
+        <h2 class="Sample">Subtotal</h2>
+        <h2 class="hundred">$100</h2>
+      </div>
+      <a href="checkout.html" class="checkout-btn">Fill out order info</a>
+    </div>
 
-<section class="square-order">
-<h4>order review</h4>
-<p>1 sample item $100</p>
-<h3>Subtotal $100</h3>
-<a href="checkout.html" class="checkout-btn">Fill out order info</a>
-</section>
+    <div class="order-title">
+      <h3>Order Review</h3>
+    </div>
 
-<h2 class="orderreview-header">Order review</h2>
+    <div id="mainorder">
+      <img
+        id="orderimg"
+        src="img/necklace-detail-3.jpg"
+        alt="Picture of the Coeur D'amour rosegold necklace."
+      />
+      <div id="maintext">
+        <h3 id="productordertitle">Coeur D'Amour Necklace</h3>
+        <p class="mainordertext">Quantity: 1</p>
+        <p class="mainordertext">$100.00</p>
+        <a href="#" id="orderedit">Edit Order</a>
+        <a href="#"><i class="bx bxs-trash"></i></a>
+      </div>
+    </div>
 
-<section class="shoppingbag-orderreview">
-<img src="img/necklace-detail-3.jpg" alt="Picture of a rosegold necklace with a pink sapphire.">
-<h3>Coeur D’amour Necklace</h3>
-<p>Quantity: 1 </p>
-  <p>$100.00</p>
-<a href="#"><i class='bx bxs-trash'></i></a>
-<p>Edit Order</p>
-</section>
+    <div class="order-title">
+      <h3>Add more to bag</h3>
+    </div>
 
-
-
-<h2 class="orderreview-header">Add more to Bag</h2>
-
-<section class="add-more-to-bag">
-    <a href="#">
+    <div id="necklacerow">
+      <a href="#" class="addingnecklaces">
         <figure>
-            <img src="img/gold-necklace-1.png" alt="Picture of gold necklace.">
-            <figcaption>Bijou Brilliant NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
+          <img
+            class="necklaceimg"
+            src="img/gold-necklace-1.png"
+            alt="Picture of gold necklace."
+          />
+          <div class="producttext">
+            <figcaption class="productname" class="addingnecklaces">
+              Bijou Brilliant
+            </figcaption>
+            <figcaption class="pricetag">$100.00</figcaption>
+            <a class="cross" href="#"><i class="bx bx-plus"></i></a>
+          </div>
         </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/gold-necklace-2.png" alt="Picture of a gold necklace.">
-            <figcaption>Perles de Rêve NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/silver-necklace-1.png" alt="Picture of a silver necklace.">
-            <figcaption>Charme Celeste NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/rosegold-necklace-1.png" alt="Picture of a rosegold necklace.">
-            <figcaption>Joyau Précieux NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
-    <a href="#">
-        <figure>
-            <img src="img/rosegold-necklace-2.png" alt="Picture of a rosegold necklace.">
-            <figcaption>Charme de Saphir NECKLACE</figcaption>
-            <figcaption>$100.00</figcaption>
-        </figure>
-    </a>
+      </a>
 
+      <a href="#" class="addingnecklaces">
+        <figure>
+          <img
+            class="necklaceimg"
+            src="img/gold-necklace-2.png"
+            alt="Picture of gold necklace."
+          />
+          <div class="producttext">
+            <figcaption class="productname">Perles de Rêve</figcaption>
+            <figcaption class="pricetag">$100.00</figcaption>
+            <a class="cross" href="#"><i class="bx bx-plus"></i></a>
+          </div>
+        </figure>
+      </a>
 
-</section>
+      <a href="#" class="addingnecklaces">
+        <figure>
+          <img
+            class="necklaceimg"
+            src="img/rosegold-necklace-1.png"
+            alt="Picture of rosegold necklace."
+          />
+          <div class="producttext">
+            <figcaption class="productname">Joyau Précieux</figcaption>
+            <figcaption class="pricetag">$100.00</figcaption>
+            <a class="cross" href="#"><i class="bx bx-plus"></i></a>
+          </div>
+        </figure>
+      </a>
+
+      <a href="#" class="addingnecklaces">
+        <figure>
+          <img
+            class="necklaceimg"
+            src="img/rosegold-necklace-2.png"
+            alt="Picture of rosegold necklace."
+          />
+          <div class="producttext">
+            <figcaption class="productname" class="addingnecklaces">
+              Charme de Saphir
+            </figcaption>
+            <figcaption class="pricetag">$100.00</figcaption>
+            <a class="cross" href="#"><i class="bx bx-plus"></i></a>
+          </div>
+        </figure>
+      </a>
+    </div>
 
     <footer>
-
       <div class="finfo">
         <ul class="row">
           <h4>CLIENT CARE</h4>
@@ -140,9 +197,9 @@
           <li>Shipping & Returns</li>
           <li>Frequently Asked Questions</li>
           <li>Schedule an Appointment</li>
-          </ul>
+        </ul>
 
-          <ul class="row">
+        <ul class="row">
           <h4>ABOUT US</h4>
           <li>Origins</li>
           <li>Our Purposes</li>
@@ -151,17 +208,16 @@
           <li>Website Policies</li>
         </ul>
 
-          <ul class="row">
+        <ul class="row">
           <h4>MATERIAL CARE</h4>
           <li>Jewelry Repair</li>
           <li>Ring Sizing</li>
           <li>Metal Allergy Resources</li>
-          <li>Styling Tips<li>
+          <li>Styling Tips</li>
+          <li></li>
         </ul>
       </div>
-    </div>
-      
-      
+
       <div class="latest">
         <h2>Latest from us</h2>
         <h5>Be the first to know about exciting new designs,</h5>
