@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coeur de Cristal</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/main.js" defer></script>
+    <script src="javascript/main.js" defer></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -52,18 +52,19 @@
         <a href="#">NEW ARRIVALS</a>
         <a href="#">BEST SELLERS</a>
       </nav>
-      <div class="search">
-        <input type="text" placeholder="Search..." />
-        <button type="submit">Search</button>
-      </div>
 
       <input type="checkbox" id="toggler" />
       <label for="toggler"><i class="bx bx-chevron-down"></i></label>
 
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+        <button type="search"><i class="bx bx-search"></i></button>
+      </div>
+
       <div class="menu-phone">
         <ul>
-          <li><a href="practice.html">HOME</a></li>
-          <li><a href="#">JEWELS</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="productpage.html">JEWELS</a></li>
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">NEW ARRIVALS</a></li>
           <li><a href="#">BEST SELLERS</a></li>
@@ -83,7 +84,7 @@
 
     <section class="content2">
       <div class="content2-text">
-        <h1>The World of Cristal</h1>
+        <h1>The World of Cristal.</h1>
         <a href="#" class="content2-btn">Read More</a>
       </div>
     </section>
@@ -94,7 +95,7 @@
         <img src="img/gold-necklace-1.png" alt="necklace 1" />
         <h2>Our new high jewelry collection</h2>
         <div class="c3button">
-          <a href="#" class="content3-btn">Shop Now></a>
+          <a href="#" class="content3-btn">SHOP NOW></a>
         </div>
       </div>
 
@@ -102,7 +103,7 @@
         <img src="img/gold-necklace-2.png" alt="necklace 2" />
         <h2>Our new high jewelry collection</h2>
         <div class="c3button">
-          <a href="#" class="content3-btn">Shop Now></a>
+          <a href="#" class="content3-btn">SHOP NOW></a>
         </div>
       </div>
     </section>
@@ -119,44 +120,49 @@
     <footer>
       <div class="finfo">
         <ul class="row">
-          <h4>CLIENT CARE</h4>
-          <li>Contact us</li>
-          <li>Track your Order</li>
-          <li>Shipping & Returns</li>
-          <li>Frequently Asked Questions</li>
-          <li>Schedule an Appointment</li>
+          <h4>
+            CLIENT CARE
+            <button class="down-arrow">
+              <i class="bx bx-chevron-down"></i>
+            </button>
+          </h4>
+          <div class="panel">
+            <li>Contact us</li>
+            <li>Track your Order</li>
+            <li>Shipping & Returns</li>
+            <li>Frequently Asked Questions</li>
+            <li>Schedule an Appointment</li>
+          </div>
         </ul>
-
         <ul class="row">
-          <h4>ABOUT US</h4>
-          <li>Origins</li>
-          <li>Our Purposes</li>
-          <li>Careers</li>
-          <li>Sustinability</li>
-          <li>Website Policies</li>
+          <h4>
+            ABOUT US
+            <button class="down-arrow">
+              <i class="bx bx-chevron-down"></i>
+            </button>
+          </h4>
+          <div class="panel">
+            <li>Origins</li>
+            <li>Our Purposes</li>
+            <li>Careers</li>
+            <li>Sustinability</li>
+            <li>Website Policies</li>
+          </div>
         </ul>
-
         <ul class="row">
-          <h4>MATERIAL CARE</h4>
-          <li>Jewelry Repair</li>
-          <li>Ring Sizing</li>
-          <li>Metal Allergy Resources</li>
-          <li>Styling Tips</li>
-          <li></li>
+          <h4>
+            MATERIAL CARE
+            <button class="down-arrow">
+              <i class="bx bx-chevron-down"></i>
+            </button>
+          </h4>
+          <div class="panel">
+            <li>Jewelry Repair</li>
+            <li>Ring Sizing</li>
+            <li>Metal Allergy Resources</li>
+            <li>Styling Tips</li>
+          </div>
         </ul>
-      </div>
-
-      <div class="latest">
-        <h2>Latest from us</h2>
-        <h5>Be the first to know about exciting new designs,</h5>
-        <h5>special events, store openings and much more.</h5>
-        <input
-          type="text"
-          id="mail"
-          name="mail"
-          placeholder="Enter your email..."
-        />
-        <div><a href="#" class="footer-btn">SIGN UP</a></div>
       </div>
 
       <div class="socials">
@@ -165,6 +171,19 @@
         <a href="#"><i class="bx bxl-instagram"></i></a>
         <a href="#"><i class="bx bxl-twitter"></i></a>
         <a href="#"><i class="bx bxl-youtube"></i></a>
+      </div>
+
+      <div class="latest">
+        <h2>Latest from us</h2>
+        <h5>Be the first to know about exciting new designs,</h5>
+        <h5>special events, store openings and much more.</h5>
+        <input
+          type="text"
+          class="mail"
+          name="mail"
+          placeholder="Enter your email..."
+        />
+        <div><a href="#" class="footer-btn">SIGN UP</a></div>
       </div>
 
       <img id="logofooter" src="img/logo.png" alt="Logo" />
