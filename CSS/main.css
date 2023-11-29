@@ -1,53 +1,61 @@
 /* Homepage*/
 
 /* header*/
-
 header {
+  top: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px 10%;
+}
+.navigation {
   list-style-type: none;
   margin: 0;
-  width: 100%;
+  padding: 0px;
+  overflow: hidden;
   background-color: #d9d9d9;
 }
 
 #Logo {
-  width: 15%;
+  display: flex;
+  width: 10%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 
-.nav-icon a {
+.nav-icon {
   margin-right: 10px;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
 }
-@media only screen and (min-width: 390px) and (max-width: 414px) {
-  .nav-icon {
-    margin-top: 10px;
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
   }
-  .nav-icon a {
-    font-size: 18px;
-    margin: 0px;
-    position: relative;
-    right: 5px;
-  }
+
   #Logo {
-    width: 30%;
-    left: -30px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .nav-icon {
+    margin-right: 0;
+    margin-top: 10px;
+    font-size: 16px;
   }
 }
 
 /* navigation menu */
 
 .navbar {
-  padding: 7px;
+  padding: 10px;
   background-color: white;
-  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,10 +87,9 @@ i {
 }
 
 /* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media (max-width: 768px) {
   .navbar {
     display: none;
-    padding: 2px;
   }
 
   .search {
@@ -90,34 +97,19 @@ i {
   }
 
   .search input {
-    width: 250px;
+    width: 400px;
     padding: 10px;
     margin-right: 5px;
-    background-color: #d9d9d9;
   }
 
   .search button {
-    float: right;
-    padding: 4px 4px;
-    position: absolute;
-    right: 45px;
-    top: 135px;
-    background: none;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    color: #0f420e;
+    padding: 5px 10px;
   }
 
   label {
     display: block;
-    font-size: 50px;
+    font-size: 24px;
     cursor: pointer;
-    font-weight: 500;
-    position: absolute;
-    left: 18px;
-    top: 125px;
-    color: #d9d9d9;
   }
 
   #toggler,
@@ -145,9 +137,8 @@ i {
   }
 
   .menu-phone ul li a {
-    color: #0f420e;
+    color: darkgreen;
     text-decoration: none;
-    font-size: 16px;
   }
 }
 
@@ -158,7 +149,7 @@ section {
 .content-btn {
   display: inline-block;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   font-family: "Karla", sans-serif;
   border: 2px solid white;
@@ -175,7 +166,7 @@ section {
 
 .main-content {
   background-color: #0f420e;
-  width: auto;
+  width: 40%;
   height: 370px;
 }
 
@@ -197,40 +188,17 @@ section {
 }
 
 #campaign {
-  width: 40%;
-  height: 510px;
-  position: absolute;
-  margin-top: -285px;
-  right: 8px;
+  width: 80%;
+  height: 499px;
+  position: relative;
+  top: -280px;
+  left: 620px;
 }
 
-@media only screen and (min-width: 390px) and (max-width: 414px) {
-  #campaign {
-    width: 45%;
-    height: 410px;
-    position: absolute;
-    margin-top: -228px;
-    right: 10px;
-  }
-  .content-btn {
-    text-decoration: none;
-    position: relative;
-    bottom: -70px;
-    left: -20px;
-  }
-  .content-text h1 {
-    position: relative;
-    left: -50px;
-  }
-  .content-text h5 {
-    line-height: 0.1;
-    position: relative;
-    bottom: -40px;
-    left: -50px;
-  }
-  .content-text h5 {
-    display: none;
-  }
+.main-content {
+  background-color: darkgreen;
+  width: 40%;
+  height: 370px;
 }
 
 /* Content 2 */
@@ -255,7 +223,7 @@ section {
 
 .content2-text h1 {
   color: white;
-  font-size: 36px;
+  font-size: 25px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 200;
   position: relative;
@@ -275,39 +243,11 @@ section {
 #goldbox {
   background-color: #d6a142;
   width: 30%;
-  height: 471px;
+  height: 458px;
   float: left;
   position: relative;
   bottom: -70px;
   margin-left: 0px;
-}
-@media only screen and (min-width: 390px) and (max-width: 414px) {
-  #goldbox {
-    width: 10%;
-    height: 370px;
-    float: left;
-    position: relative;
-    bottom: 300px;
-    left: 0px;
-  }
-  .content2-btn {
-    position: absolute;
-    bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .content2 {
-    width: 60%;
-    height: 330px;
-    right: 0px;
-    position: relative;
-    bottom: -70px;
-  }
-  .content2-text h1 {
-    font-size: 30px;
-    position: relative;
-    left: 70px;
-  }
 }
 
 /* Content 3 */
@@ -324,36 +264,19 @@ section {
   height: auto;
 }
 
-.c3 {
-  text-align: center;
-}
-
 .c3 h2 {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
   color: black;
   text-decoration: none;
+  text-align: center;
 }
 
 .content3-btn {
   font-family: "Karla", sans-serif;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-  color: #000000;
-  font-size: 16px;
-}
-@media only screen and (min-width: 390px) and (max-width: 414px) {
-  .content3 {
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
-    bottom: -70px;
-  }
-
-  .content3-btn {
-    margin-left: 0;
-  }
+  margin-left: 7rem;
 }
 
 /* Content 4 */
@@ -361,7 +284,7 @@ section {
 .content4 {
   background-color: #d6a142;
   width: 20%;
-  height: 237px;
+  height: 250px;
   position: relative;
   bottom: -70px;
 }
@@ -369,7 +292,7 @@ section {
 .content4-btn {
   display: inline-block;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   font-family: "Karla", sans-serif;
   border: 2px solid black;
@@ -393,53 +316,20 @@ section {
 }
 
 .gift {
-  width: 40%;
-  height: 378px;
-  position: absolute;
-  bottom: 0px;
-  right: -231px;
+  width: 100%;
+  height: 380px;
+  position: relative;
+  bottom: 180px;
+  left: 510px;
 }
 
 #greenbox {
   background-color: #0f420e;
-  width: 40%;
-  height: 379px;
-  position: absolute;
-  bottom: 0px;
-  right: -550px;
-}
-@media only screen and (min-width: 390px) and (max-width: 414px) {
-  #greenbox {
-    width: 100%;
-    height: 20px;
-    left: 0;
-  }
-  .content4 {
-    width: 60%;
-    height: 80px;
-    bottom: -550px;
-  }
-  .content4-btn {
-    border: 2px solid black;
-    padding: 12px 25px;
-    position: relative;
-    bottom: 40px;
-    left: 60px;
-  }
-  .content4-text h1 {
-    font-size: 24px;
-    position: relative;
-    left: 40px;
-    bottom: 30px;
-  }
-  .gift {
-    width: 100%;
-    height: 470px;
-    position: absolute;
-    bottom: 120px;
-    float: left;
-    left: 0;
-  }
+  width: 100%;
+  height: 380px;
+  position: relative;
+  bottom: 565px;
+  left: 768px;
 }
 
 /* Footer */
@@ -449,8 +339,6 @@ footer {
   background-color: #d9d9d9;
   position: relative;
   bottom: -170px;
-  margin: 0;
-  width: auto;
 }
 
 #logofooter {
@@ -458,22 +346,20 @@ footer {
   margin-left: 40%;
   width: 20%;
   position: relative;
-  bottom: 20px;
+  bottom: 100px;
 }
 
 #credit {
+  position: left;
   text-align: center;
-  position: absolute;
-  bottom: 8px;
-  right: 0px;
-  left: 0px;
+  bottom: -10px;
 }
 
 .latest {
   float: right;
   position: relative;
-  bottom: 40px;
-  right: 20px;
+  bottom: 70px;
+  margin-right: 40px;
 }
 
 .latest h2 {
@@ -488,16 +374,9 @@ footer {
   font-size: 16px;
 }
 
-.mail {
-  display: block;
-  padding: 7px 80px;
+#mail {
+  padding: 10px 80px;
   color: black;
-}
-
-.mail input {
-  width: 400px;
-  padding: 10px;
-  margin-right: 5px;
 }
 
 .footer-btn {
@@ -509,30 +388,26 @@ footer {
   font-size: 16px;
 }
 
-.socials a {
-  color: white;
-  font-size: 40px;
-  font-weight: 400;
-}
 .socials {
-  position: absolute;
-  bottom: 50px;
-  left: 15px;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  bottom: -140px;
 }
 
 .finfo {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
-  bottom: 20px;
+  bottom: -90px;
+  margin-left: -20px;
 }
 
 .row {
   list-style: none;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   margin-right: 20px;
-  flex: 1 1 10%;
 }
 
 h4 {
@@ -546,111 +421,6 @@ li {
   font-size: 15px;
 }
 
-button {
-  display: none;
-}
-
-.subscribe {
-  display: none;
-}
-
-@media only screen and (min-width: 390px) and (max-width: 414px) {
-  .row {
-    flex: 1 1 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  footer {
-    margin-top: 380px;
-  }
-  .row li {
-    display: none;
-  }
-  button,
-  .down-arrow i {
-    display: block;
-    color: black;
-  }
-  h4,
-  button .down-arrow i {
-    display: flex;
-  }
-
-  .socials a {
-    position: relative;
-    bottom: 30px;
-    font-size: 40px;
-    align-items: center;
-    left: 50px;
-    margin: 0;
-  }
-  .latest {
-    display: block;
-    position: relative;
-    left: 10px;
-  }
-  .latest h2 {
-    font-size: 20px;
-  }
-  .latest h5 {
-    font-size: 16px;
-  }
-
-  #logofooter {
-    float: right;
-    right: -20px;
-    width: 60%;
-    bottom: 400px;
-  }
-  #credit {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    bottom: 0px;
-  }
-  .down-arrow {
-    background-color: none;
-    color: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-  }
-
-  /* the following 11 lines of code was adapted from ChatGPT Accessed 2023-11-28 */
-  .down-arrow i {
-    transform: rotate(0deg);
-    transition: transform 0.3s ease;
-  }
-
-  .row.active .down-arrow i {
-    transform: rotate(180deg);
-  }
-
-  .finfo .row {
-    cursor: pointer;
-  }
-
-  .finfo .row.active .panel {
-    display: block;
-  }
-
-  /* the following 6 lines of code was adapted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown Accessed 2023-11-28*/
-  .panel {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    overflow: auto;
-    z-index: 1;
-  }
-
-  .panel li {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-}
 /* Product Page & Shopping bag*/
 
 .category-options-jewels {
@@ -862,7 +632,6 @@ figure {
   margin-right: 25px;
   margin-left: 30px;
 }
-
 .extraproductscontainer-figcaption {
   color: rgb(0, 0, 0);
   text-decoration: none;
