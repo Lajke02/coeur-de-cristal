@@ -423,26 +423,65 @@ li {
 
 /* Product Page & Shopping bag*/
 
-.category-options-jewels {
-  background-color: #d9d9d9;
-  display: flex;
+.titlespace {
+  padding: 2rem;
+  border-top: solid #d9d9d9 20px;
 }
 
-figure {
-  margin-left: 0%;
-  padding-left: 0%;
-  max-width: 20%;
-}
-
-.options {
-  min-width: 20%;
-}
-
-.title-card-category {
-  border-top: solid #d9d9d9 10px;
-  padding-top: 2%;
+.category-title {
   font-family: "Cormorant Garamond", serif;
+  font-size: x-large;
   text-align: center;
+}
+
+.italic-description {
+  font-family: "Karla", sans-serif;
+  font-size: medium;
+  font-style: italic;
+  text-align: center;
+}
+
+.category-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #d9d9d9;
+  overflow: auto;
+  white-space: nowrap;
+  height: auto;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+@media screen and (min-width: 1000px) {
+  .categoryimg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .categoryimg {
+    max-height: 200px;
+  }
+}
+
+.category-slider,
+.categories {
+  color: black;
+  font-family: "Cormorant Garamond", serif;
+  font-size: xx-large;
+  text-align: center;
+}
+.categories {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+
+.activetext {
+  color: #0f420e;
+  text-decoration: underline;
 }
 
 .breadcrumbs {
@@ -451,27 +490,168 @@ figure {
   color: black;
   padding-bottom: 0%;
   font-family: "Karla", sans-serif;
+  text-decoration: none;
   font-size: small;
   padding-top: 0%;
+  padding-left: 2rem;
 }
 
-.header {
-  padding-top: 2%;
+.necklacespace {
+  padding: 1rem;
+}
+
+.necklacearea {
+  padding: 2rem;
+}
+
+.necklacecolumns {
+  display: grid;
+  row-gap: 2rem;
+  grid-template-areas:
+    "img img img img img"
+    "img img img img img";
+}
+
+@media screen and (max-width: 1000px) {
+  .necklacecolumns {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+      "img img img img"
+      "img img img img";
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .necklacecolumns {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+      "img img img"
+      "img img img";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .necklacecolumns {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+      "img img"
+      "img img";
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .necklacecolumns {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+      "img"
+      "img";
+  }
+}
+
+.necklaceimage,
+.necklacecolumns {
+  text-align: left;
+}
+
+.necklaceimage {
+  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+
+.necklaceimg {
+  width: 100%;
+}
+
+.new-text {
+  font-family: "Karla", sans-serif;
+  color: #000000;
+  font-size: small;
+  float: left;
+  background-color: white;
+  position: relative;
+}
+
+.productname {
+  font-family: "Karla", sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+.pricetag {
+  font-family: "Karla", sans-serif;
+  color: darkgray;
+  text-decoration: none;
+}
+
+/* Shopping Bag */
+#square-order {
+  border: solid black;
+  padding: 2rem;
+  width: 20%;
+  float: right;
+  padding-top: 0%;
+  margin-top: 6rem;
+  margin-right: 6rem;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  #square-order {
+    float: none;
+    width: 80%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  #pricepoint {
+    font-family: "Karla", sans-serif;
+    font-weight: bolder;
+    display: flex;
+    margin-left: 4rem;
+  }
+  #item {
+    font-family: "Karla", sans-serif;
+    font-size: x-large;
+    display: flex;
+    border-top: solid#d9d9d9;
+    border-bottom: solid#d9d9d9;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 4rem;
+  }
+}
+
+#smallordertitle {
   font-family: "Cormorant Garamond", serif;
+  font-size: xx-large;
+  font-weight: lighter;
   text-align: center;
 }
 
-.choose-jewelry {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin-right: 20%;
-  margin-left: 20%;
+#item {
+  font-family: "Karla", sans-serif;
+  font-size: x-large;
+  display: flex;
+  border-top: solid#d9d9d9;
+  border-bottom: solid#d9d9d9;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
-.orderreview-header {
-  padding-top: 2%;
-  font-family: "Cormorant Garamond", serif;
-  padding-left: 4rem;
+#pricepoint {
+  font-family: "Karla", sans-serif;
+  font-weight: bolder;
+  display: flex;
+}
+
+.hundred {
+  margin-left: 20%;
 }
 
 .checkout-btn {
@@ -483,8 +663,11 @@ figure {
   font-family: "Karla", sans-serif;
   border: 2px solid black;
   padding: 12px 25px;
-  position: relative;
   bottom: -50px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .checkout-btn:hover {
@@ -492,145 +675,146 @@ figure {
   color: black;
 }
 
-.shoppingbag-orderreview {
-  border-top: solid #d9d9d9;
-  padding-left: 4rem;
-  display: flex;
-  margin-left: 4rem;
-}
-
-.square-order {
-  border: solid black;
+#mainorder {
+  padding-left: 2rem;
   padding-top: 0%;
-  padding-bottom: 10%;
-  padding-left: 0%;
-  padding-right: 0%;
-  min-width: 100px;
-  max-width: 400px;
-  text-align: center;
-  margin-right: 4rem;
 }
 
-.add-more-to-bag {
-  border-top: solid #d9d9d9;
-  display: flex;
+@media screen and (max-width: 1000px) {
+  .order-title {
+    width: 100%;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 0, 5rem;
+  }
+  #orderimg {
+    width: 80%;
+    float: none;
+    padding-right: 2rem;
+  }
+  #maintext {
+    margin-right: 0%;
+    margin-bottom: 0%;
+  }
+}
+
+.order-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: x-large;
+  font-weight: lighter;
+  border-bottom: solid #d9d9d9;
+  width: 50%;
+  margin-left: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 0, 5rem;
+}
+
+#orderimg {
+  width: 25%;
+  float: left;
+  padding-right: 2rem;
+}
+
+#maintext {
+  margin-right: 25%;
+  margin-bottom: 25%;
+}
+
+#productordertitle {
+  font-family: "Karla", sans-serif;
+  font-size: x-large;
+}
+
+.mainordertext {
+  font-family: "Karla", sans-serif;
+}
+
+#orderedit {
+  font-family: "Karla", sans-serif;
+  color: darkgrey;
+  text-decoration: none;
+}
+
+#necklacerow {
+  display: grid;
+  grid-template-areas: "img img img img";
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 2rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  #necklacerow {
+    display: grid;
+    grid-template-areas: "img img";
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 2rem;
+    width: 100%;
+  }
+}
+
+.addingnecklaces {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  grid-area: img;
+  margin-left: 2rem;
+}
+
+#necklacerow,
+.addingnecklaces {
+  padding-left: 0%;
+}
+.producttext {
+  margin-left: 2rem;
+  font-size: medium;
+}
+
+.cross {
+  float: right;
 }
 
 /*Detaile Page*/
 
 .costofproduct {
   color: white;
+  text-align: center;
+  border: 15px solid#000000;
   background-color: #000000;
-  border: 1px solid #000000;
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  width: 450px;
-  height: 50px;
-  text-align: center;
-  padding-top: 15px;
-}
-.link-addtobag {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-.textcontact-advisor {
-  border: 1px solid #000000;
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  width: 450px;
-  height: 50px;
-  text-align: center;
-  padding-top: 15px;
-}
-.detailpagebody {
   font-size: 20px;
   font-weight: 500;
   font-family: "Karla", sans-serif;
+  width: 300px;
 }
+
 .menuforthepreviouspage {
   display: flex;
   list-style: none;
   padding-left: 0;
-}
-.menuforthepreviouspage a {
-  color: rgb(0, 0, 0);
-  text-decoration: line;
-}
-.link-readmore {
-  color: rgb(0, 0, 0);
-  text-decoration: line;
-}
-.link-storeandadvisor {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-.paypal-findstore {
-  font-size: 15px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  margin-top: 3px;
-  margin-bottom: 3px;
 }
 .nacklaceimg-container {
   width: 800px;
   display: flex;
   flex-wrap: wrap;
   float: left;
-  margin-top: 30px;
-  margin-right: 25px;
-  margin-left: 30px;
+  margin-right: 15px;
 }
 .nacklaceimg-container img {
   width: 50%;
-  height: 500px;
   margin-bottom: 0px;
 }
 .text-container {
   display: grid;
-  grid-template-columns: 90%;
-  margin-bottom: 200px;
-  margin-left: 100px;
-  margin-right: 50px;
-}
-.text-container h2 {
-  font-family: "cormorant garamond", sans-serif;
-  font-size: 30px;
-  font-weight: 100;
-  margin-bottom: 0px;
-}
-.description-h4 {
-  font-size: 17px;
-  font-family: "Karla", sans-serif;
-  font-weight: Bold;
-  margin-bottom: 3px;
-}
-.description-details {
-  font-size: 15px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-}
-.greenline-extracontent {
-  background-color: #0f420e;
-  height: 1px;
-  border: none;
-}
-.extra-container {
-  font-size: 25px;
-  font-family: "cormorant garamond", sans-serif;
-  font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  grid-template-columns: 70%;
+  margin-bottom: 300px;
 }
 .extraproducts-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin-top: 0px;
-  margin-right: 25px;
-  margin-left: 30px;
 }
 .extraproductscontainer-figcaption {
   color: rgb(0, 0, 0);
