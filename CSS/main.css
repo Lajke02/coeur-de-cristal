@@ -432,7 +432,6 @@ figure {
   margin-left: 0%;
   padding-left: 0%;
   max-width: 20%;
-  min-width: ;
 }
 
 .options {
@@ -521,42 +520,123 @@ figure {
 
 .costofproduct {
   color: white;
-  text-align: center;
-  border: 15px solid#000000;
   background-color: #000000;
+  border: 1px solid #000000;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  width: 450px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+.link-addtobag {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.textcontact-advisor {
+  border: 1px solid #000000;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  width: 450px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+.detailpagebody {
   font-size: 20px;
   font-weight: 500;
   font-family: "Karla", sans-serif;
-  width: 300px;
 }
-
 .menuforthepreviouspage {
   display: flex;
   list-style: none;
   padding-left: 0;
+}
+.menuforthepreviouspage a {
+  color: rgb(0, 0, 0);
+  text-decoration: line;
+}
+.link-readmore {
+  color: rgb(0, 0, 0);
+  text-decoration: line;
+}
+.link-storeandadvisor {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.paypal-findstore {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 .nacklaceimg-container {
   width: 800px;
   display: flex;
   flex-wrap: wrap;
   float: left;
-  margin-right: 15px;
+  margin-top: 30px;
+  margin-right: 25px;
+  margin-left: 30px;
 }
 .nacklaceimg-container img {
   width: 50%;
+  height: 500px;
   margin-bottom: 0px;
 }
 .text-container {
   display: grid;
-  grid-template-columns: 70%;
-  margin-bottom: 300px;
+  grid-template-columns: 90%;
+  margin-bottom: 200px;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+.text-container h2 {
+  font-family: "cormorant garamond", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+.description-h4 {
+  font-size: 17px;
+  font-family: "Karla", sans-serif;
+  font-weight: Bold;
+  margin-bottom: 3px;
+}
+.description-details {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+}
+.greenline-extracontent {
+  background-color: #0f420e;
+  height: 1px;
+  border: none;
+}
+.extra-container {
+  font-size: 25px;
+  font-family: "cormorant garamond", sans-serif;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .extraproducts-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  margin-top: 0px;
+  margin-right: 25px;
+  margin-left: 30px;
 }
-figure {
-  margin-left: 0;
+
+.extraproductscontainer-figcaption {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "karla", sans-serif;
 }
 .extraproducts-container img {
   width: 230px;
