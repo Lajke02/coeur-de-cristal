@@ -18,7 +18,47 @@
   margin-bottom: 10px;
   outline: none;
   cursor: pointer;
+  visibility: visible;
 }
+.popup {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-20%, -50%);
+}
+.popup img {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+.popuph3 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.popuptextcontainer {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 90%;
+  margin-bottom: 130px;
+}
+
 .textcontact-advisor {
   border: 1px solid #000000;
   font-size: 24px;
@@ -75,7 +115,6 @@
   margin-top: 3px;
   margin-bottom: 3px;
 }
-
 .text-container {
   display: grid;
 
@@ -132,7 +171,6 @@ figure {
   font-size: 16px;
   color: rgb(138, 138, 138);
 }
-
 .extraproductscontainer-figcaption {
   font-family: "karla", sans-serif;
   font-size: 16px;
