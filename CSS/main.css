@@ -3,27 +3,23 @@
 /* header*/
 
 header {
-  top: 0;
-  right: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px 10%;
 }
 .navigation {
   list-style-type: none;
   margin: 0;
-  padding: 0px;
+  padding: 0;
   overflow: hidden;
   background-color: #d9d9d9;
 }
 
 #Logo {
-  display: flex;
   width: 15%;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin: 0 auto;
 }
 .nav-icon a {
   margin-right: 10px;
@@ -31,19 +27,11 @@ header {
   font-size: 18px;
   font-weight: 400;
 }
+
 @media only screen and (min-width: 390px) and (max-width: 414px) {
-  .nav-icon {
-    margin-top: 10px;
-  }
-  .nav-icon a {
-    font-size: 18px;
-    margin: 0px;
-    position: relative;
-    right: 5px;
-  }
   #Logo {
     width: 30%;
-    left: -30px;
+    margin-left: 0;
   }
 }
 
@@ -52,10 +40,9 @@ header {
 .navbar {
   padding: 10px;
   background-color: white;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 8rem;
 }
 .navbar a {
@@ -82,9 +69,7 @@ i {
 .menu-phone {
   display: none;
 }
-
-/* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media only screen and (max-width: 1000px) {
   .navbar {
     display: none;
     padding: 2px;
@@ -95,23 +80,14 @@ i {
   }
 
   .search input {
-    width: 250px;
-    padding: 10px;
-    margin-right: 5px;
+    width: 100%;
+    padding: 20px;
     background-color: #d9d9d9;
   }
-
-  .search button {
-    float: right;
-    padding: 4px 4px;
-    position: absolute;
-    right: 45px;
-    top: 115px;
-    background: none;
+  .searchicon i {
     font-size: 20px;
-    border: none;
-    cursor: pointer;
     color: #0f420e;
+    margin-top: 2%;
   }
 
   label {
@@ -120,11 +96,10 @@ i {
     cursor: pointer;
     font-weight: 500;
     position: absolute;
-    left: 18px;
-    top: 110px;
+    left: 4rem;
+    top: 160px;
     color: #d9d9d9;
   }
-
   #toggler,
   input,
   label,
@@ -155,6 +130,37 @@ i {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 768px) {
+  label {
+    left: 3rem;
+    top: 18%;
+  }
+}
+
+/* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
+@media only screen and (min-width: 390px) and (max-width: 414px) {
+  .search {
+    position: relative;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .search input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  label {
+    left: 18px;
+    top: 12%;
+  }
+}
 
 /* maincontent */
 section {
@@ -169,8 +175,8 @@ section {
   border: 2px solid white;
   padding: 12px 25px;
   text-decoration: none;
-  position: relative;
-  bottom: -50px;
+  position: absolute;
+  bottom: 20px;
 }
 
 .content-btn:hover {
@@ -182,6 +188,7 @@ section {
   background-color: #0f420e;
   width: auto;
   height: 370px;
+  max-height: 400px;
 }
 
 .content-text h1 {
@@ -197,40 +204,61 @@ section {
   font-size: 16px;
   font-family: "Karla", sans-serif;
   font-weight: 200;
-  position: relative;
   bottom: -40px;
 }
 
 #campaign {
   width: 40%;
   height: 510px;
+  max-height: 410;
   position: absolute;
-  margin-top: -285px;
+  margin-top: -242px;
   right: 8px;
+}
+@media only screen and (max-width: 1000px) {
+  #campaign {
+    width: 40%;
+    height: 470px;
+    margin-top: -220px;
+    right: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #campaign {
+    width: 40%;
+    height: 445px;
+    margin-top: -255px;
+    right: 10px;
+  }
+  .content-btn {
+    position: relative;
+    bottom: -150px;
+    left: -20px;
+  }
+  .content-text h1 {
+    position: relative;
+    left: -70px;
+  }
+  .content-text h5 {
+    line-height: 0.1;
+    position: relative;
+    left: -70px;
+  }
 }
 
 @media only screen and (min-width: 390px) and (max-width: 414px) {
   #campaign {
     width: 45%;
     height: 410px;
-    position: absolute;
-    margin-top: -228px;
+    margin-top: -215px;
     right: 10px;
   }
   .content-btn {
-    text-decoration: none;
     position: relative;
-    bottom: -70px;
-    left: -20px;
+    margin-bottom: -50px;
+    margin-left: -30px;
   }
   .content-text h1 {
-    position: relative;
-    left: -50px;
-  }
-  .content-text h5 {
-    line-height: 0.1;
-    position: relative;
-    bottom: -40px;
     left: -50px;
   }
   .content-text h5 {
@@ -286,14 +314,57 @@ section {
   bottom: -70px;
   margin-left: 0px;
 }
+@media only screen and (max-width: 1000px) {
+  #goldbox {
+    width: 20%;
+    height: 428px;
+    bottom: 358px;
+  }
+  .content2 {
+    width: 60%;
+    height: 330px;
+    right: 0px;
+    bottom: -70px;
+  }
+  .content2-btn {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 20px;
+  }
+  .content2-text h1 {
+    font-size: 30px;
+    left: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #goldbox {
+    width: 10%;
+    height: 405px;
+    bottom: 335px;
+    left: 0px;
+  }
+  .content2-btn {
+    position: absolute;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content2 {
+    width: 60%;
+    height: 330px;
+    bottom: -70px;
+  }
+  .content2-text h1 {
+    font-size: 36px;
+    left: 70px;
+  }
+}
+
 @media only screen and (min-width: 390px) and (max-width: 414px) {
   #goldbox {
     width: 10%;
     height: 370px;
-    float: left;
-    position: relative;
     bottom: 300px;
-    left: 0px;
   }
   .content2-btn {
     position: absolute;
@@ -304,13 +375,10 @@ section {
   .content2 {
     width: 60%;
     height: 330px;
-    right: 0px;
-    position: relative;
     bottom: -70px;
   }
   .content2-text h1 {
     font-size: 30px;
-    position: relative;
     left: 70px;
   }
 }
@@ -349,11 +417,24 @@ section {
   color: #000000;
   font-size: 16px;
 }
+@media only screen and (max-width: 768px) {
+  .content3 {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    bottom: -70px;
+    margin-bottom: 40%;
+  }
+
+  .content3-btn {
+    margin-left: 0;
+  }
+}
 @media only screen and (min-width: 390px) and (max-width: 414px) {
   .content3 {
     grid-template-columns: 1fr;
     grid-gap: 40px;
     bottom: -70px;
+    margin-bottom: 30px;
   }
 
   .content3-btn {
@@ -413,6 +494,70 @@ section {
   bottom: 0px;
   right: -550px;
 }
+@media only screen and (max-width: 1000px) {
+  .content4 {
+    width: 20%;
+    height: 237px;
+    position: relative;
+    bottom: -70px;
+  }
+
+  .content4-btn {
+    bottom: -140px;
+    left: 0px;
+  }
+
+  .content4-text h1 {
+    left: 0px;
+  }
+
+  .gift {
+    width: 40%;
+    height: 335px;
+    bottom: 0px;
+    margin-right: 0px;
+  }
+
+  #greenbox {
+    width: 30%;
+    height: 335px;
+    bottom: 0px;
+    margin-right: 26%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #greenbox {
+    width: 100%;
+    height: 40px;
+    left: 0;
+  }
+  .content4 {
+    width: 60%;
+    height: 100px;
+    bottom: -550px;
+  }
+  .content4-btn {
+    border: 2px solid black;
+    padding: 12px 25px;
+    bottom: 20px;
+    left: 150px;
+  }
+  .content4-text h1 {
+    font-size: 24px;
+    left: 120px;
+    bottom: 20px;
+  }
+  .gift {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 150px;
+    float: left;
+    left: 0;
+  }
+}
+
 @media only screen and (min-width: 390px) and (max-width: 414px) {
   #greenbox {
     width: 100%;
@@ -558,6 +703,109 @@ button {
 .subscribe {
   display: none;
 }
+@media only screen and (max-width: 1000px) {
+  footer {
+    padding-bottom: 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .row {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  footer {
+    margin-top: 380px;
+    padding-bottom: 40%;
+  }
+  .row li {
+    display: none;
+  }
+  button,
+  .down-arrow i {
+    display: block;
+    color: black;
+  }
+  h4,
+  button .down-arrow i {
+    display: flex;
+  }
+
+  .socials a {
+    bottom: 20px;
+    font-size: 40px;
+    position: relative;
+    left: 30px;
+    margin: 40px;
+  }
+  .latest {
+    display: block;
+    left: 0;
+    float: left;
+    bottom: 30px;
+  }
+  .latest h2 {
+    font-size: 20px;
+  }
+  .latest h5 {
+    font-size: 16px;
+  }
+
+  #logofooter {
+    float: right;
+    right: 0px;
+    width: 50%;
+    position: absolute;
+    bottom: 300px;
+  }
+  #credit {
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0;
+  }
+  .down-arrow {
+    background-color: none;
+    color: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  /* the following 11 lines of code was adapted from ChatGPT Accessed 2023-11-28 */
+  .down-arrow i {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+
+  .row.active .down-arrow i {
+    transform: rotate(180deg);
+  }
+
+  .finfo .row {
+    cursor: pointer;
+  }
+
+  .finfo .row.active .panel {
+    display: block;
+  }
+
+  /* the following 6 lines of code was adapted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown Accessed 2023-11-28*/
+  .panel {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .panel li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+}
 
 @media only screen and (min-width: 390px) and (max-width: 414px) {
   .row {
@@ -603,8 +851,8 @@ button {
 
   #logofooter {
     float: right;
-    right: -20px;
-    width: 60%;
+    right: 0px;
+    width: 40%;
     bottom: 400px;
   }
   #credit {
