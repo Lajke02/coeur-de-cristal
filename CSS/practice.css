@@ -31,17 +31,19 @@ header {
   font-size: 18px;
   font-weight: 400;
 }
-
-@media only screen and (max-width: 768px) {
-  .nav-icon a {
-    font-size: 20px;
-    margin: 0;
-    margin-right: 0;
+@media only screen and (min-width: 390px) and (max-width: 414px) {
+  .nav-icon {
     margin-top: 10px;
+  }
+  .nav-icon a {
+    font-size: 18px;
+    margin: 0px;
+    position: relative;
+    right: 5px;
   }
   #Logo {
     width: 30%;
-    margin-left: 20px;
+    left: -30px;
   }
 }
 
@@ -82,8 +84,7 @@ i {
 }
 
 /* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   .navbar {
     display: none;
     padding: 2px;
@@ -94,8 +95,8 @@ i {
   }
 
   .search input {
-    width: 100%;
-    padding: 20px;
+    width: 250px;
+    padding: 10px;
     margin-right: 5px;
     background-color: #d9d9d9;
   }
@@ -105,9 +106,9 @@ i {
     padding: 4px 4px;
     position: absolute;
     right: 45px;
-    top: 190px;
+    top: 115px;
     background: none;
-    font-size: 40px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     color: #0f420e;
@@ -119,8 +120,8 @@ i {
     cursor: pointer;
     font-weight: 500;
     position: absolute;
-    left: 50px;
-    top: 190px;
+    left: 18px;
+    top: 110px;
     color: #d9d9d9;
   }
 
@@ -208,27 +209,32 @@ section {
   right: 8px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   #campaign {
-    width: 40%;
-    height: 445px;
-    margin-top: -255px;
+    width: 45%;
+    height: 410px;
+    position: absolute;
+    margin-top: -228px;
     right: 10px;
   }
   .content-btn {
     text-decoration: none;
     position: relative;
-    bottom: -150px;
+    bottom: -70px;
     left: -20px;
   }
   .content-text h1 {
     position: relative;
-    left: -70px;
+    left: -50px;
   }
   .content-text h5 {
     line-height: 0.1;
     position: relative;
-    left: -70px;
+    bottom: -40px;
+    left: -50px;
+  }
+  .content-text h5 {
+    display: none;
   }
 }
 
@@ -280,17 +286,18 @@ section {
   bottom: -70px;
   margin-left: 0px;
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   #goldbox {
     width: 10%;
-    height: 405px;
-    bottom: 335px;
+    height: 370px;
+    float: left;
+    position: relative;
+    bottom: 300px;
     left: 0px;
   }
   .content2-btn {
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -302,7 +309,7 @@ section {
     bottom: -70px;
   }
   .content2-text h1 {
-    font-size: 36px;
+    font-size: 30px;
     position: relative;
     left: 70px;
   }
@@ -342,13 +349,11 @@ section {
   color: #000000;
   font-size: 16px;
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   .content3 {
     grid-template-columns: 1fr;
     grid-gap: 40px;
     bottom: -70px;
-    margin-bottom: 300px;
   }
 
   .content3-btn {
@@ -408,34 +413,35 @@ section {
   bottom: 0px;
   right: -550px;
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   #greenbox {
     width: 100%;
-    height: 40px;
+    height: 20px;
     left: 0;
   }
   .content4 {
     width: 60%;
-    height: 100px;
+    height: 80px;
     bottom: -550px;
   }
   .content4-btn {
     border: 2px solid black;
     padding: 12px 25px;
-    bottom: 20px;
-    left: 150px;
+    position: relative;
+    bottom: 40px;
+    left: 60px;
   }
   .content4-text h1 {
     font-size: 24px;
-    left: 120px;
-    bottom: 20px;
+    position: relative;
+    left: 40px;
+    bottom: 30px;
   }
   .gift {
     width: 100%;
-    height: auto;
+    height: 470px;
     position: absolute;
-    bottom: 150px;
+    bottom: 120px;
     float: left;
     left: 0;
   }
@@ -553,7 +559,7 @@ button {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 390px) and (max-width: 414px) {
   .row {
     flex: 1 1 100%;
     margin-right: 0;
@@ -561,7 +567,6 @@ button {
   }
   footer {
     margin-top: 380px;
-    padding-bottom: 40%;
   }
   .row li {
     display: none;
@@ -577,17 +582,17 @@ button {
   }
 
   .socials a {
-    bottom: 20px;
-    font-size: 40px;
     position: relative;
-    left: 30px;
-    margin: 40px;
+    bottom: 30px;
+    font-size: 40px;
+    align-items: center;
+    left: 50px;
+    margin: 0;
   }
   .latest {
     display: block;
-    left: 0;
-    float: left;
-    bottom: 30px;
+    position: relative;
+    left: 10px;
   }
   .latest h2 {
     font-size: 20px;
@@ -598,15 +603,15 @@ button {
 
   #logofooter {
     float: right;
-    right: 0px;
-    width: 50%;
-    position: absolute;
-    bottom: 300px;
+    right: -20px;
+    width: 60%;
+    bottom: 400px;
   }
   #credit {
+    position: relative;
     margin-right: auto;
     margin-left: auto;
-    bottom: 0;
+    bottom: 0px;
   }
   .down-arrow {
     background-color: none;
@@ -650,243 +655,4 @@ button {
     text-decoration: none;
     display: block;
   }
-}
-/* Product Page & Shopping bag*/
-
-.category-options-jewels {
-  background-color: #d9d9d9;
-  display: flex;
-}
-
-figure {
-  margin-left: 0%;
-  padding-left: 0%;
-  max-width: 20%;
-}
-
-.options {
-  min-width: 20%;
-}
-
-.title-card-category {
-  border-top: solid #d9d9d9 10px;
-  padding-top: 2%;
-  font-family: "Cormorant Garamond", serif;
-  text-align: center;
-}
-
-.breadcrumbs {
-  display: flex;
-  padding-left: 0%;
-  color: black;
-  padding-bottom: 0%;
-  font-family: "Karla", sans-serif;
-  font-size: small;
-  padding-top: 0%;
-}
-
-.header {
-  padding-top: 2%;
-  font-family: "Cormorant Garamond", serif;
-  text-align: center;
-}
-
-.choose-jewelry {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin-right: 20%;
-  margin-left: 20%;
-}
-
-.orderreview-header {
-  padding-top: 2%;
-  font-family: "Cormorant Garamond", serif;
-  padding-left: 4rem;
-}
-
-.checkout-btn {
-  display: inline-block;
-  color: white;
-  background-color: black;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  border: 2px solid black;
-  padding: 12px 25px;
-  position: relative;
-  bottom: -50px;
-}
-
-.checkout-btn:hover {
-  background-color: #d6a142;
-  color: black;
-}
-
-.shoppingbag-orderreview {
-  border-top: solid #d9d9d9;
-  padding-left: 4rem;
-  display: flex;
-  margin-left: 4rem;
-}
-
-.square-order {
-  border: solid black;
-  padding-top: 0%;
-  padding-bottom: 10%;
-  padding-left: 0%;
-  padding-right: 0%;
-  min-width: 100px;
-  max-width: 400px;
-  text-align: center;
-  margin-right: 4rem;
-}
-
-.add-more-to-bag {
-  border-top: solid #d9d9d9;
-  display: flex;
-}
-
-/*Detaile Page*/
-
-.costofproduct {
-  color: white;
-  text-align: center;
-  border: 15px solid#000000;
-  background-color: #000000;
-  border: 1px solid #000000;
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  width: 450px;
-  height: 50px;
-  text-align: center;
-  padding-top: 15px;
-}
-.link-addtobag {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-.textcontact-advisor {
-  border: 1px solid #000000;
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  width: 450px;
-  height: 50px;
-  text-align: center;
-  padding-top: 15px;
-}
-.detailpagebody {
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-}
-
-.menuforthepreviouspage {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-.nacklaceimg-container {
-  width: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  float: left;
-  margin-top: 30px;
-  margin-right: 25px;
-  margin-left: 30px;
-}
-.menuforthepreviouspage a {
-  color: rgb(0, 0, 0);
-  text-decoration: line;
-}
-.nacklaceimg-container img {
-  width: 50%;
-  margin-bottom: 0px;
-  height: 500px;
-}
-.link-readmore {
-  color: rgb(0, 0, 0);
-  text-decoration: line;
-}
-.link-storeandadvisor {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-.paypal-findstore {
-  font-size: 15px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  margin-top: 3px;
-  margin-bottom: 3px;
-}
-
-.text-container {
-  display: grid;
-
-  grid-template-columns: 90%;
-  margin-bottom: 200px;
-  margin-left: 100px;
-  margin-right: 50px;
-}
-.text-container h2 {
-  font-family: "cormorant garamond", sans-serif;
-  font-size: 30px;
-  font-weight: 100;
-  margin-bottom: 0px;
-}
-.description-h4 {
-  font-size: 17px;
-  font-family: "Karla", sans-serif;
-  font-weight: Bold;
-  margin-bottom: 3px;
-}
-.description-details {
-  font-size: 15px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-}
-.greenline-extracontent {
-  background-color: #0f420e;
-  height: 1px;
-  border: none;
-}
-.extra-container {
-  font-size: 25px;
-  font-family: "cormorant garamond", sans-serif;
-  font-weight: 500;
-}
-.extraproducts-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  padding-left: 5px;
-}
-figure {
-  margin-left: 0;
-
-  margin-left: 20px;
-  margin-right: 20px;
-
-  margin-left: 20px;
-  margin-right: 20px;
-
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.extraproducts-container img {
-  width: 230px;
-}
-.linkforextraproducts {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-.costof-extraproduct {
-  font-family: "karla", sans-serif;
-  font-size: 16px;
-  color: rgb(138, 138, 138);
-}
-
-.extraproductscontainer-figcaption {
-  font-family: "karla", sans-serif;
-  font-size: 16px;
 }
