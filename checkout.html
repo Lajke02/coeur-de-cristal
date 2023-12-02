@@ -45,6 +45,12 @@
       href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="navigation">
@@ -58,9 +64,15 @@
       </div>
     </header>
     <ul>
-      <a href="shoppingbag.html"><li>Shopping Bag</li></a>
+      <a href="shoppingbag.html" class="shoppingbaglink"
+        ><li>
+          <i class="fa-solid fa-angle-left" style="color: #000000"></i> Shopping
+          Bag
+        </li></a
+      >
     </ul>
     <main>
+<<<<<<< Updated upstream
       <button class="purchasebtn">Purchase</button>
 
       <div class="modal">
@@ -89,5 +101,125 @@
     </main>
 
     <footer></footer>
+=======
+      <section id="ordersummary">
+        <h2 class="heading-ordersummary">Order Summary</h2>
+        <h3 class="edit-ordersummary">Edit</h3>
+        <img
+          class="ordersummaryimg"
+          src="img/necklace-detail-1.jpg"
+          alt="nacklace with rose gold lace and pink diamond"
+        />
+        <h3 class="subtotal-ordersummary">
+          Subtotal <br />
+          Express Delivery with Signature $0
+        </h3>
+        <h3 class="estimatedtotal-ordersummary">Estimated Total</h3>
+        <button class="purchase-button">
+          <h4 class="purchase-text">Purchase</h4>
+        </button>
+      </section>
+      <section id="checkoutcontainer">
+        <div>
+          <h2 class="paymentmethod">
+            Payment method
+            <hr />
+          </h2>
+          <ul>
+            <li>
+              <button></button>
+              <i class="fa-brands fa-cc-paypal fa-xl"></i>
+            </li>
+            <li>
+              <button></button>
+              <i class="fa-solid fa-credit-card"></i>
+            </li>
+            <li>
+              <button></button>
+              <h3>Klarna</h3>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="paymentmethod">
+            Personal Information
+            <hr />
+          </h2>
+
+          <form action="#">
+            <label for=""></label>
+            <input type="Shiping method" />
+            <label for=""></label>
+            <input type="text" />
+          </form>
+        </div>
+        <div>
+          <h2 class="paymentmethod">
+            Shipping Method
+            <hr />
+          </h2>
+          <button></button>
+          <h3>In Person</h3>
+          <button></button>
+          <h3>By Shipment</h3>
+        </div>
+        <div>
+          <h2 class="paymentmethod">
+            Shipping Address
+            <hr />
+          </h2>
+
+          <form action="">
+            <label for=""></label>
+            <input type="text" name="" id="" />
+            <label for=""></label>
+            <input type="text" />
+            <label for=""></label>
+            <input type="text" name="" id="" />
+            <label for=""></label>
+            <input type="text" />
+          </form>
+        </div>
+
+        <div>
+          <h2 class="paymentmethod">
+            Gift Message (optional)
+            <i
+              class="fa-solid fa-envelope-open-text"
+              style="color: #1a4725"
+            ></i>
+            <hr />
+          </h2>
+
+          <button>
+            <h3>Customize my Gift Message <i class="fa fa-caret-down"></i></h3>
+          </button>
+          <div class="">
+            <a href="#link1">Box</a>
+            <a href="#link2">Bag</a>
+            <a href="#link3">Box+Bag</a>
+            <a href="#link4">none</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="checkout-footer">
+      <div>
+        <div>
+          <h2>Shipping & Returns</h2>
+          <h3><a href="">Show Delivery</a> &nbsp<a href="">Show Returns</a></h3>
+        </div>
+        <div>
+          <h2>Pick up at Store</h2>
+          <a href=""><h3>Discover our Stores</h3></a>
+        </div>
+        <div>
+          <h2>Privacy Policy</h2>
+          <a href=""><h3>Learn More</h3></a>
+        </div>
+      </div>
+    </footer>
+>>>>>>> Stashed changes
   </body>
 </html>
