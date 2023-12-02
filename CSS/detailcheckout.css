@@ -479,6 +479,10 @@ ul {
   margin-top: 18px;
   margin-left: 20px;
 }
+.checkbox {
+  display: none;
+}
+
 /* footer */
 
 footer {

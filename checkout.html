@@ -72,36 +72,6 @@
       >
     </ul>
     <main>
-<<<<<<< Updated upstream
-      <button class="purchasebtn">Purchase</button>
-
-      <div class="modal">
-        <div class="popup-content">
-          <h2>Yay! Your order is confirmed</h2>
-          <p>
-            Coeur de Cristal will start working on this right away. We will
-            email you as soon as it dispatches.
-          </p>
-          <a href="shoppingbag.html"
-            ><button class="orderbtn">View your order</button></a
-          >
-          <p>
-            *Dispatch and delivery times are subject to change. If you are
-            experiencing difficulty with this order,
-            <span style="color: #d6a142; text-decoration: underline"
-              >please contact the seller.</span
-            >
-            See
-            <span style="color: #d6a142; text-decoration: underline"
-              >more info.</span
-            >
-          </p>
-        </div>
-      </div>
-    </main>
-
-    <footer></footer>
-=======
       <section id="ordersummary">
         <h2 class="heading-ordersummary">Order Summary</h2>
         <h3 class="edit-ordersummary">Edit</h3>
@@ -114,6 +84,7 @@
           Subtotal <br />
           Express Delivery with Signature $0
         </h3>
+        <br />
         <h3 class="estimatedtotal-ordersummary">Estimated Total</h3>
         <button class="purchase-button">
           <h4 class="purchase-text">Purchase</h4>
@@ -125,20 +96,23 @@
             Payment method
             <hr />
           </h2>
-          <ul>
-            <li>
-              <button></button>
-              <i class="fa-brands fa-cc-paypal fa-xl"></i>
-            </li>
-            <li>
-              <button></button>
-              <i class="fa-solid fa-credit-card"></i>
-            </li>
-            <li>
-              <button></button>
-              <h3>Klarna</h3>
-            </li>
-          </ul>
+
+          <label for="paymentmethod">
+            <input type="checkbox" class="checkbox" /><i
+              class="fa-brands fa-cc-paypal fa-xl"
+            ></i>
+            <span class="checkmark"></span>
+          </label>
+
+          <label for="paymentmethod">
+            <input type="checkbox" /><i class="fa-solid fa-credit-card"></i>
+            <span class="checkmark"></span>
+          </label>
+
+          <label for="paymentmethod">
+            <input type="checkbox" />Klarna
+            <span class="checkmark"></span>
+          </label>
         </div>
         <div>
           <h2 class="paymentmethod">
@@ -220,6 +194,5 @@
         </div>
       </div>
     </footer>
->>>>>>> Stashed changes
   </body>
 </html>
