@@ -1,5 +1,4 @@
 // footer java script:
-// the following 6 lines of code was adapted from ChatGPT accessed 2023-11-28:
 const rows = document.querySelectorAll(".finfo .row");
 
 rows.forEach((row) => {
