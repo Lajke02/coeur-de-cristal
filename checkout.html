@@ -72,7 +72,7 @@
       >
     </ul>
     <main>
-      <section id="ordersummary">
+      <section class="ordersummary">
         <h2 class="heading-ordersummary">Order Summary</h2>
         <h3 class="edit-ordersummary">Edit</h3>
         <img
@@ -82,49 +82,50 @@
         />
         <h3 class="subtotal-ordersummary">
           Subtotal <br />
+
           Express Delivery with Signature $0
         </h3>
-        <br />
+
         <h3 class="estimatedtotal-ordersummary">Estimated Total</h3>
         <button class="purchase-button">
           <h4 class="purchase-text">Purchase</h4>
         </button>
       </section>
-      <section id="checkoutcontainer">
+      <section class="checkoutcontainer">
         <div>
           <h2 class="paymentmethod">
             Payment method
             <hr />
           </h2>
 
-          <label for="paymentmethod">
-            <input type="checkbox" class="checkbox" /><i
-              class="fa-brands fa-cc-paypal fa-xl"
-            ></i>
-            <span class="checkmark"></span>
+          <label for="methods" class="methods-pay">
+            <input type="checkbox" class="input-container" />
+            <i class="fa-brands fa-cc-paypal fa-xl"></i>
+            <span class="mark"></span>
           </label>
 
-          <label for="paymentmethod">
-            <input type="checkbox" /><i class="fa-solid fa-credit-card"></i>
-            <span class="checkmark"></span>
+          <label for="methods" class="methods-pay">
+            <input type="checkbox" class="input-container" />
+            <i class="fa-solid fa-credit-card"></i>
+            <span class="mark"></span>
           </label>
 
-          <label for="paymentmethod">
-            <input type="checkbox" />Klarna
-            <span class="checkmark"></span>
+          <label for="methods" class="methods-pay">
+            <input type="checkbox" class="input-container" />
+            Klarna
+            <span class="mark"></span>
           </label>
         </div>
-        <div>
+        <div id="checkout-container">
           <h2 class="paymentmethod">
             Personal Information
             <hr />
           </h2>
 
           <form action="#">
-            <label for=""></label>
-            <input type="Shiping method" />
-            <label for=""></label>
-            <input type="text" />
+            <input id="textarea" type="Text" value="Email adress" />
+
+            <input id="textarea" type="email" value="Phone Number" /> <br />
           </form>
         </div>
         <div>
@@ -132,10 +133,17 @@
             Shipping Method
             <hr />
           </h2>
-          <button></button>
-          <h3>In Person</h3>
-          <button></button>
-          <h3>By Shipment</h3>
+          <label for="methods" class="methods-pay">
+            <input type="checkbox" class="input-container" />
+            In Person
+            <span class="mark"></span>
+          </label>
+
+          <label for="methods" class="methods-pay">
+            <input type="checkbox" class="input-container" />
+            By Shipment
+            <span class="mark"></span>
+          </label>
         </div>
         <div>
           <h2 class="paymentmethod">
@@ -143,15 +151,13 @@
             <hr />
           </h2>
 
-          <form action="">
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" />
+          <form action="#">
+            <input id="textarea" type="Text" value="Shipping Adress" />
+
+            <input id="textarea" type="email" value="City" />
+            <input id="textarea" type="Text" value="State" />
+
+            <input id="textarea" type="email" value="Zip Code" />
           </form>
         </div>
 
@@ -165,21 +171,23 @@
             <hr />
           </h2>
 
-          <button>
-            <h3>Customize my Gift Message <i class="fa fa-caret-down"></i></h3>
-          </button>
-          <div class="">
-            <a href="#link1">Box</a>
-            <a href="#link2">Bag</a>
-            <a href="#link3">Box+Bag</a>
-            <a href="#link4">none</a>
+          <div class="gift-dropdown">
+            <button class="dropbtn">
+              Customize my Gift Message <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#link1">Box</a>
+              <a href="#link2">Bag</a>
+              <a href="#link3">Box+Bag</a>
+              <a href="#link4">none</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="checkout-footer">
-      <div>
+      <div class="checkoutfooter-container">
         <div>
           <h2>Shipping & Returns</h2>
           <h3><a href="">Show Delivery</a> &nbsp<a href="">Show Returns</a></h3>
