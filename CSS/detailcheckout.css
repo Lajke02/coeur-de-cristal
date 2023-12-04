@@ -952,7 +952,6 @@ li {
   color: #ffffff;
   text-decoration: underline;
 }
-
 /* Checkout Pop-up */
 .purchasebtn {
   background-color: #000000;
@@ -1009,7 +1008,6 @@ li {
   border-radius: 12px;
   padding: 5px;
 }
-
 .ani {
   animation-name: beat;
   animation-duration: 3s;
