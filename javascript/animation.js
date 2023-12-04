@@ -1,6 +1,6 @@
-const btnAnimate = document.getElementById("addtobagbutton");
+const openPopupButton = document.getElementById("addtobagbutton");
 const shoppingbag = document.getElementById("shoppers");
 
-btnAnimate.addEventListener("click", () => {
+openPopupButton.addEventListener("click", () => {
   shoppingbag.classList.toggle("ani");
 });
