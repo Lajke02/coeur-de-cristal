@@ -173,105 +173,6 @@ i {
   margin-bottom: 10px;
   cursor: pointer;
 }
-.popupmodal {
-  position: fixed;
-  top: 20%;
-  left: 60%;
-  transform: translate(-20%, -60%) scale(0);
-  transition: ease-in-out;
-  z-index: 5;
-}
-.popupmodal.active {
-  transform: translate(-20%, -60%) scale(1);
-}
-.popup {
-  width: 500px;
-  height: 500px;
-  background-color: white;
-  border-radius: 4px;
-  position: absolute;
-}
-
-.popup a {
-  color: #000000;
-  text-decoration: none;
-}
-.popup img {
-  display: flex;
-  flex-wrap: wrap;
-  float: left;
-  width: 200px;
-  height: 200px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 7px;
-}
-.popuph3 {
-  font-size: 25px;
-  font-weight: bold;
-  font-family: "Karla", sans-serif;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.popuptextcontainer {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Karla", sans-serif;
-  margin-top: 20px;
-  margin-left: 20px;
-  display: grid;
-  grid-template-columns: 90%;
-  margin-bottom: 100px;
-}
-.popupline {
-  width: 450px;
-  background-color: #0f420e;
-  height: 2px;
-  border: none;
-}
-.popupquantity {
-  margin-top: 20px;
-}
-.delivery-text {
-  font-size: 15px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  margin-left: 20px;
-}
-.checkoutbutton-text {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Karla", sans-serif;
-  text-align: center;
-}
-#checkoutbutton {
-  background-color: #000000;
-  border: 1px solid #000000;
-  width: 400px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 5px;
-  margin-left: 50px;
-  cursor: pointer;
-  display: grid;
-}
-#overlay {
-  position: fixed;
-  /*opacity: 0;*/
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: none;
-  pointer-events: none;
-}
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
 
 .textcontact-advisor {
   border: 1px solid #000000;
@@ -389,6 +290,107 @@ figure {
   font-family: "karla", sans-serif;
   font-size: 16px;
 }
+
+/*Popup Detail Page*/
+.popupmodal {
+  position: fixed;
+  top: 20%;
+  left: 60%;
+  transform: translate(-20%, -60%) scale(0);
+  transition: ease-in-out;
+  z-index: 5;
+}
+.popupmodal.active {
+  transform: translate(-20%, -60%) scale(1);
+}
+.popup {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.popup a {
+  color: #000000;
+  text-decoration: none;
+}
+.popup img {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+.popuph3 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.popuptextcontainer {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 90%;
+  margin-bottom: 100px;
+}
+.popupline {
+  width: 450px;
+  background-color: #0f420e;
+  height: 2px;
+  border: none;
+}
+.popupquantity {
+  margin-top: 20px;
+}
+.delivery-text {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  margin-left: 20px;
+}
+.checkoutbutton-text {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  text-align: center;
+}
+#checkoutbutton {
+  background-color: #000000;
+  border: 1px solid #000000;
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  cursor: pointer;
+  display: grid;
+}
+#overlay {
+  position: fixed;
+  /*opacity: 0;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: none;
+  pointer-events: none;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 @media all and (min-width: 300px) and (max-width: 700px) {
 }
 
@@ -466,7 +468,7 @@ ul {
   font-family: "Karla", sans-serif;
   text-align: center;
 }
-
+/* Media for the checkout page  */
 @media all and (min-width: 300px) and (max-width: 700px) {
   .ordersummary {
     background-color: #d9d9d9;
