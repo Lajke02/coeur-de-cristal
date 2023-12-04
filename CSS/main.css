@@ -914,12 +914,12 @@ button {
 }
 .category-title {
   font-family: "Cormorant Garamond", serif;
-  font-size: x-large;
+  font-size: 40pt;
   text-align: center;
 }
 .italic-description {
   font-family: "Karla", sans-serif;
-  font-size: medium;
+  font-size: 28pt;
   font-style: italic;
   text-align: center;
 }
@@ -949,7 +949,7 @@ button {
 .categories {
   color: black;
   font-family: "Cormorant Garamond", serif;
-  font-size: xx-large;
+  font-size: 24pt;
   text-align: center;
 }
 .categories {
@@ -970,7 +970,7 @@ button {
   padding-bottom: 0%;
   font-family: "Karla", sans-serif;
   text-decoration: none;
-  font-size: small;
+  font-size: 16pt;
   padding-top: 0%;
   padding-left: 2rem;
 }
@@ -1044,48 +1044,50 @@ button {
 .new-text {
   font-family: "Karla", sans-serif;
   color: #000000;
-  font-size: small;
+  font-size: 16pt;
   float: left;
   background-color: white;
   position: relative;
 }
 .productname {
   font-family: "Karla", sans-serif;
+  font-size: 16pt;
   color: #000000;
   text-decoration: none;
 }
 .pricetag {
   font-family: "Karla", sans-serif;
+  font-size: 16pt;
   color: darkgray;
   text-decoration: none;
 }
 /* Shopping Bag */
 #square-order {
   border: solid black;
-  padding: 2rem;
+  padding: 5rem;
   width: 20%;
   float: right;
   padding-top: 0%;
   margin-top: 6rem;
   margin-right: 6rem;
   position: relative;
+  align-items: center;
 }
 @media screen and (max-width: 1000px) {
   #square-order {
     float: none;
-    width: 80%;
-    margin-left: 2rem;
+    width: 60%;
     margin-right: 2rem;
   }
   #pricepoint {
     font-family: "Karla", sans-serif;
-    font-weight: bolder;
+    font-size: 16pt;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 1%;
   }
   #item {
     font-family: "Karla", sans-serif;
-    font-size: x-large;
+    font-size: 16pt;
     display: flex;
     border-top: solid#d9d9d9;
     border-bottom: solid#d9d9d9;
@@ -1093,18 +1095,27 @@ button {
     margin-bottom: 0%;
     margin-left: 4rem;
   }
+  .checkout-btn {
+    font-family: "Karla", sans-serif;
+    font-size: 16pt;
+    border: 2px solid black;
+    padding: 10px 20px;
+    bottom: -50px;
+    margin-bottom: 2rem;
+    position: center;
+  }
 }
 
 #smallordertitle {
   font-family: "Cormorant Garamond", serif;
-  font-size: xx-large;
+  font-size: 24pt;
   font-weight: lighter;
   text-align: center;
 }
 
 #item {
   font-family: "Karla", sans-serif;
-  font-size: x-large;
+  font-size: 24pt;
   display: flex;
   border-top: solid#d9d9d9;
   border-bottom: solid#d9d9d9;
@@ -1113,7 +1124,7 @@ button {
 }
 #pricepoint {
   font-family: "Karla", sans-serif;
-  font-weight: bolder;
+  font-size: 20pt;
   display: flex;
 }
 .hundred {
@@ -1122,13 +1133,12 @@ button {
 
 .checkout-btn {
   font-family: "Karla", sans-serif;
+  font-size: 20pt;
   border: 2px solid black;
   padding: 12px 25px;
   bottom: -50px;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  margin-top: 1rem;
   margin-bottom: 2rem;
+  position: center;
 }
 
 .checkout-btn:hover {
@@ -1143,8 +1153,8 @@ button {
 
 @media screen and (max-width: 1000px) {
   .order-title {
-    width: 100%;
-    margin-left: 2rem;
+    width: 80%;
+    margin-left: 0%;
     padding-top: 2rem;
     margin-bottom: 0, 5rem;
   }
@@ -1158,6 +1168,7 @@ button {
     margin-bottom: 0%;
   }
 }
+
 .order-title {
   font-family: "Cormorant Garamond", serif;
   font-size: x-large;
@@ -1203,8 +1214,9 @@ button {
     grid-template-areas: "img img";
     margin-left: 0%;
     margin-right: 0%;
-    padding-left: 2rem;
-    width: 100%;
+    padding-left: 1rem;
+    margin-right: 2rem;
+    width: 80%;
   }
 }
 .addingnecklaces {
@@ -1370,4 +1382,41 @@ figure {
 .extraproductscontainer-figcaption {
   font-family: "karla", sans-serif;
   font-size: 16px;
+}
+
+.ani {
+  animation-name: beat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes beat {
+  15% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  60% {
+    transform: rotate(15deg);
+  }
+
+  70% {
+    transform: rotate(-15deg);
+  }
+
+  80% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
 }

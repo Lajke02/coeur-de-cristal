@@ -6,6 +6,7 @@
     <title>Coeur de Cristal</title>
     <link rel="stylesheet" href="css/detailcheckout.css" />
     <script src="javascript/detailcheckout.js" defer></script>
+    <script src="javascript/animation.js" defer></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -52,7 +53,7 @@
       <div class="nav-icon">
         <a href="#"><i class="bx bx-location-plus"></i></a>
         <a href="#"><i class="bx bx-user"></i></a>
-        <a href="shoppingbag.html"><i class="bx bx-cart"></i></a>
+        <a id="shoppers" href="shoppingbag.html"><i class="bx bx-cart"></i></a>
         <a href="#"><i class="bx bx-heart"></i></a>
       </div>
     </header>
@@ -100,6 +101,7 @@
           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1 +
         </h4>
         <button
+          type="button"
           class="costofproduct"
           id="addtobagbutton"
           data-modal-target="#popupmodal"
