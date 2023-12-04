@@ -38,7 +38,8 @@ header {
 /* navigation menu */
 
 .navbar {
-  padding: 10px;
+  padding: 7px;
+  margin-top: 40px;
   background-color: white;
   height: 100%;
   display: flex;
@@ -47,7 +48,6 @@ header {
   gap: 8rem;
 }
 .navbar a {
-  position: relative;
   list-style: none;
   text-decoration: none;
   color: #0f420e;
@@ -73,28 +73,32 @@ i {
 @media only screen and (max-width: 1000px) {
   .navbar {
     gap: 5rem;
-    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
   .navbar {
     display: none;
-    padding: 2px;
   }
 
   .search {
     display: block;
+    position: relative;
   }
 
   .search input {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     background-color: #d9d9d9;
+    margin-left: auto;
+    margin-right: auto;
   }
   .searchicon i {
     font-size: 20px;
     color: #0f420e;
-    margin-top: 2%;
+    float: right;
+    position: relative;
+    top: -40px;
+    right: 10px;
   }
 
   label {
@@ -102,10 +106,9 @@ i {
     font-size: 50px;
     cursor: pointer;
     font-weight: 500;
-    position: absolute;
-    left: 3rem;
-    top: 18%;
     color: #d9d9d9;
+    position: relative;
+    top: 50px;
   }
   #toggler,
   input,
@@ -135,37 +138,48 @@ i {
     color: #0f420e;
     text-decoration: none;
     font-size: 16px;
+    font-family: "Cormorant Garamond", serif;
   }
 }
 
 /* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
 @media only screen and (min-width: 390px) and (max-width: 414px) {
-  .search {
-    position: relative;
-  }
-
-  .search-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-left: 20px;
-  }
-
-  .search input {
-    width: 100%;
-    padding: 10px;
-  }
-
   label {
-    left: 18px;
-    top: 12%;
+    top: 50px;
+    left: -10px;
+  }
+  .search input {
+    width: 70%;
+  }
+  .searchicon i {
+    top: -40px;
+    right: 0;
   }
 }
 
 /* maincontent */
-section {
-  padding: 5% 20%;
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.content-text {
+  background-color: #0f420e;
+  width: 70%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-left: 10%;
+}
+
+#campaign {
+  width: 30%;
+  height: 80%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .content-btn {
   display: inline-block;
@@ -176,8 +190,6 @@ section {
   border: 2px solid white;
   padding: 12px 25px;
   text-decoration: none;
-  position: absolute;
-  bottom: 20px;
 }
 
 .content-btn:hover {
@@ -185,101 +197,90 @@ section {
   color: white;
 }
 
-.main-content {
-  background-color: #0f420e;
-  width: auto;
-  height: 370px;
-  max-height: 400px;
-}
-
 .content-text h1 {
   color: #d6a142;
-  font-size: 40px;
+  font-size: 80px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 200;
 }
 
 .content-text h5 {
-  line-height: 0.1;
   color: white;
   font-size: 16px;
   font-family: "Karla", sans-serif;
   font-weight: 200;
-  bottom: -40px;
 }
 
-#campaign {
-  width: 40%;
-  height: 510px;
-  max-height: 410;
-  position: absolute;
-  margin-top: -242px;
-  right: 8px;
-}
-@media only screen and (max-width: 1000px) {
-  #campaign {
-    width: 40%;
-    height: 470px;
-    margin-top: -220px;
-    right: 10px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #campaign {
-    width: 40%;
-    height: 445px;
-    margin-top: -255px;
-    right: 10px;
-  }
-  .content-btn {
-    position: relative;
-    bottom: -150px;
-    left: -20px;
-  }
-  .content-text h1 {
-    position: relative;
-    left: -70px;
-  }
-  .content-text h5 {
-    line-height: 0.1;
-    position: relative;
-    left: -70px;
-  }
+.main-phone {
+  display: none;
 }
 
 @media only screen and (min-width: 390px) and (max-width: 414px) {
-  #campaign {
-    width: 45%;
-    height: 410px;
-    margin-top: -215px;
-    right: 10px;
-  }
-  .content-btn {
-    position: relative;
-    margin-bottom: -50px;
-    margin-left: -30px;
-  }
-  .content-text h1 {
-    left: -50px;
-  }
-  .content-text h5 {
+  .main-content {
     display: none;
+  }
+  .main-phone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  #mainpic {
+    width: 100%;
+  }
+  .content-phone {
+    background-color: #0f420e;
+    padding: 20px;
+  }
+  .content-phone h1 {
+    color: #d6a142;
+    font-size: 40px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
+  }
+  .content-phone h5 {
+    color: white;
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    font-weight: 200;
+  }
+  .maincontent-btn {
+    display: inline-block;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    margin-left: 35%;
   }
 }
 
 /* Content 2 */
+.content2 {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+}
+
+.content2-text {
+  background-color: black;
+  width: 70%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
 .content2-btn {
   display: inline-block;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   font-family: "Karla", sans-serif;
   border: 2px solid white;
   padding: 12px 25px;
   text-decoration: none;
-  position: relative;
-  bottom: -200px;
-  margin-left: -80px;
+  margin-top: 18%;
 }
 
 .content2-btn:hover {
@@ -292,95 +293,24 @@ section {
   font-size: 36px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 200;
-  position: relative;
-  margin-left: -80px;
-}
-
-.content2 {
-  background-color: black;
-  width: 30%;
-  height: 330px;
-  float: right;
-  right: 0px;
-  position: relative;
-  bottom: -70px;
 }
 
 #goldbox {
+  width: 45%;
+  height: 80%;
   background-color: #d6a142;
-  width: 30%;
-  height: 471px;
-  float: left;
-  position: relative;
-  bottom: -70px;
-  margin-left: 0px;
-}
-@media only screen and (max-width: 1000px) {
-  #goldbox {
-    width: 20%;
-    height: 428px;
-    bottom: 358px;
-  }
-  .content2 {
-    width: 60%;
-    height: 330px;
-    right: 0px;
-    bottom: -70px;
-  }
-  .content2-btn {
-    position: absolute;
-    bottom: 30px;
-    margin-left: 20px;
-  }
-  .content2-text h1 {
-    font-size: 30px;
-    left: 100px;
-  }
 }
 @media only screen and (max-width: 768px) {
-  #goldbox {
-    width: 10%;
-    height: 405px;
-    bottom: 335px;
-    left: 0px;
-  }
   .content2-btn {
-    position: absolute;
-    bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .content2 {
-    width: 60%;
-    height: 330px;
-    bottom: -70px;
-  }
-  .content2-text h1 {
-    font-size: 36px;
-    left: 70px;
+    margin-top: 70%;
   }
 }
-
 @media only screen and (min-width: 390px) and (max-width: 414px) {
   #goldbox {
     width: 10%;
-    height: 370px;
-    bottom: 300px;
   }
-  .content2-btn {
-    position: absolute;
-    bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .content2 {
-    width: 60%;
-    height: 330px;
-    bottom: -70px;
-  }
-  .content2-text h1 {
-    font-size: 30px;
-    left: 70px;
+  .content2-text {
+    width: 90%;
   }
 }
 
@@ -388,13 +318,11 @@ section {
 .content3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 120px;
-  position: relative;
-  bottom: -70px;
+  grid-gap: 0.4rem;
 }
 
 .c3 img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -423,7 +351,6 @@ section {
     grid-template-columns: 1fr;
     grid-gap: 40px;
     bottom: -70px;
-    margin-bottom: 40%;
   }
 
   .content3-btn {
@@ -441,155 +368,103 @@ section {
   .content3-btn {
     margin-left: 0;
   }
+  .c3 img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Content 4 */
 
 .content4 {
-  background-color: #d6a142;
-  width: 20%;
-  height: 237px;
-  position: relative;
-  bottom: -70px;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
 }
 
+.content4-text {
+  background-color: #d6a142;
+  width: 60%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+.content4-text h1 {
+  font-size: 48px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+}
 .content4-btn {
   display: inline-block;
-  color: black;
-  font-size: 15px;
+  color: white;
+  font-size: 14px;
   font-weight: 500;
   font-family: "Karla", sans-serif;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 12px 25px;
   text-decoration: none;
-  position: relative;
-  bottom: -140px;
-  left: -200px;
+  margin-top: 18%;
 }
 
 .content4-btn:hover {
-  background-color: white;
-}
-
-.content4-text h1 {
-  font-size: 25px;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 200;
-  position: relative;
-  left: -200px;
+  background-color: #d6a142;
+  color: white;
 }
 
 .gift {
-  width: 40%;
-  height: 378px;
-  position: absolute;
-  bottom: 0px;
-  right: -231px;
+  width: 25%;
+  height: 80%;
 }
 
 #greenbox {
   background-color: #0f420e;
-  width: 40%;
-  height: 379px;
-  position: absolute;
-  bottom: 0px;
-  right: -550px;
+  width: 15%;
+  height: 80%;
 }
-@media only screen and (max-width: 1000px) {
-  .content4 {
-    width: 20%;
-    height: 237px;
-    position: relative;
-    bottom: -70px;
-  }
 
-  .content4-btn {
-    bottom: -140px;
-    left: 0px;
-  }
-
-  .content4-text h1 {
-    left: 0px;
-  }
-
-  .gift {
-    width: 40%;
-    height: 335px;
-    bottom: 0px;
-    margin-right: 0px;
-  }
-
-  #greenbox {
-    width: 30%;
-    height: 335px;
-    bottom: 0px;
-    margin-right: 26%;
-  }
+.content4-phone {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  #greenbox {
-    width: 100%;
-    height: 40px;
-    left: 0;
-  }
-  .content4 {
-    width: 60%;
-    height: 100px;
-    bottom: -550px;
-  }
-  .content4-btn {
-    border: 2px solid black;
-    padding: 12px 25px;
-    bottom: 20px;
-    left: 150px;
-  }
-  .content4-text h1 {
-    font-size: 24px;
-    left: 120px;
-    bottom: 20px;
-  }
   .gift {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 150px;
-    float: left;
-    left: 0;
+    width: 45%;
   }
 }
-
 @media only screen and (min-width: 390px) and (max-width: 414px) {
-  #greenbox {
-    width: 100%;
-    height: 20px;
-    left: 0;
-  }
   .content4 {
-    width: 60%;
-    height: 80px;
-    bottom: -550px;
+    display: none;
   }
-  .content4-btn {
-    border: 2px solid black;
-    padding: 12px 25px;
-    position: relative;
-    bottom: 40px;
-    left: 60px;
+  .content4-phone {
+    display: flex;
+    flex-direction: column;
   }
-  .content4-text h1 {
-    font-size: 24px;
-    position: relative;
-    left: 40px;
-    bottom: 30px;
+  .phone4-text {
+    background-color: #d6a142;
+    padding: 20px;
+    text-align: center;
   }
-  .gift {
+  .giftphone {
     width: 100%;
-    height: 470px;
-    position: absolute;
-    bottom: 120px;
-    float: left;
-    left: 0;
+  }
+  .phone4-text h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
+  }
+  .phone4-btn {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    font-family: "Karla", sans-serif;
+  }
+  #phonebox {
+    background-color: #0f420e;
+    padding: 20px;
   }
 }
 
@@ -599,7 +474,6 @@ footer {
   padding: 30px;
   background-color: #d9d9d9;
   position: relative;
-  bottom: -170px;
   margin: 0;
   width: auto;
 }
@@ -716,7 +590,6 @@ button {
     margin-bottom: 20px;
   }
   footer {
-    margin-top: 380px;
     padding-bottom: 40%;
   }
   .row li {
@@ -814,9 +687,6 @@ button {
     margin-right: 0;
     margin-bottom: 20px;
   }
-  footer {
-    margin-top: 380px;
-  }
   .row li {
     display: none;
   }
@@ -832,7 +702,7 @@ button {
 
   .socials a {
     position: relative;
-    bottom: 30px;
+    bottom: 70px;
     font-size: 40px;
     align-items: center;
     left: 50px;
@@ -854,13 +724,13 @@ button {
     float: right;
     right: 0px;
     width: 40%;
-    bottom: 400px;
+    bottom: 70%;
   }
   #credit {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    bottom: 0px;
+    bottom: -100px;
   }
   .down-arrow {
     background-color: none;

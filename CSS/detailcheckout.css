@@ -917,12 +917,12 @@ li {
   background-color: #000000;
   color: white;
   border: none;
-  padding: 10px 20px;
-  width: 300px;
-  cursor: pointer;
-  text-align: center;
+  padding: 10px;
   text-decoration: none;
   display: inline-block;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
   font-size: 18px;
   margin: 4px 2px;
 }
@@ -942,12 +942,12 @@ li {
   margin: 15% auto;
   padding: 40px;
   border: 1px solid black;
-  width: 60%;
-  height: auto;
   align-items: center;
   text-align: center;
   margin-top: 50%;
   margin-bottom: 50%;
+  width: 60%;
+  height: auto;
 }
 
 .popup-content h2 {
