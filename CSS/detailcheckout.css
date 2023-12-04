@@ -468,6 +468,45 @@ ul {
   font-family: "Karla", sans-serif;
   text-align: center;
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.popup-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 40px;
+  border: 1px solid black;
+  align-items: center;
+  text-align: center;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  width: 60%;
+  height: auto;
+}
+.popup-content h2 {
+  color: #0f420e;
+  font-size: 20px;
+  font-weight: bold;
+}
+.popup-content p {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.orderbtn {
+  background-color: #0f420e;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+}
+
 /* Media for the checkout page  */
 @media all and (min-width: 300px) and (max-width: 700px) {
   .ordersummary {

@@ -87,10 +87,33 @@
         </h3>
 
         <h3 class="estimatedtotal-ordersummary">Estimated Total</h3>
-        <button class="purchase-button">
+        <button class="purchase-button" onclick="showModal()">
           <h4 class="purchase-text">Purchase</h4>
         </button>
       </section>
+      <div class="modal" onclick="hideModal(event)">
+        <div class="popup-content">
+          <h2>Yay! Your order is confirmed</h2>
+          <p>
+            Coeur de Cristal will start working on this right away. We will
+            email you as soon as it dispatches.
+          </p>
+          <a href="shoppingbag.html"
+            ><button class="orderbtn">View your order</button></a
+          >
+          <p>
+            *Dispatch and delivery times are subject to change. If you are
+            experiencing difficulty with this order,
+            <span style="color: #d6a142; text-decoration: underline"
+              >please contact the seller.</span
+            >
+            See
+            <span style="color: #d6a142; text-decoration: underline"
+              >more info.</span
+            >
+          </p>
+        </div>
+      </div>
       <section class="checkoutcontainer">
         <div>
           <h2 class="paymentmethod">
