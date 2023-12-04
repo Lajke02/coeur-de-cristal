@@ -389,6 +389,8 @@ figure {
   font-family: "karla", sans-serif;
   font-size: 16px;
 }
+@media all and (min-width: 300px) and (max-width: 700px) {
+}
 
 /* Checkout Page*/
 ul {
