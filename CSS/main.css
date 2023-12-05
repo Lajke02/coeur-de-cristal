@@ -586,7 +586,6 @@ button {
   .socials {
     display: flex;
     gap: 10px;
-    margin-left: 0px;
     position: relative;
     bottom: 0px;
   }
@@ -611,6 +610,9 @@ button {
   h4,
   button .down-arrow i {
     display: flex;
+  }
+  .socials {
+    align-items: center;
   }
 
   .latest {
