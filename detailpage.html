@@ -99,18 +99,15 @@
           Quantity &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1 +
+          &nbsp &nbsp &nbsp 1 +
         </h4>
-        <button
-          type="button"
-          class="costofproduct"
-          id="addtobagbutton"
-          data-modal-target="#popupmodal"
-        >
-          $100.00 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-          &nbsp &nbsp &nbsp &nbsp &nbsp Add to bag
+        <button type="button" id="addtobagbutton" onclick="showPopup()">
+          <h4 class="costofproduct">
+            $100.00 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp Add to bag
+          </h4>
         </button>
-        <div class="popupmodal active" id="popupmodal">
+        <div class="popupmodal" onclick="hidePopup(event)">
           <div class="popup">
             <h3 class="popuph3">
               To speed up the checkout, <a href="#">sign in now.</a>
@@ -130,13 +127,11 @@
               <a href="#">Veiw Bag</a>
             </h4>
             <a href="shoppingbag.html">
-              <button
-                id="checkoutbutton"
-                class="checkoutbutton-text"
-                data-close-button="checkoutbutton"
-              >
-                Total: $100.00 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp To
-                Checkout
+              <button id="checkoutbutton" data-close-button="checkoutbutton">
+                <h4 class="checkoutbutton-text">
+                  Total: $100.00 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp To
+                  Checkout
+                </h4>
               </button>
             </a>
           </div>
@@ -169,13 +164,15 @@
           amour” necklace and let its beauty radiate your neckline, leaving a
           lasting impression wherever you go.
         </p>
-        <ul class="description-details">
-          <li>18k rose gold with pink sapphires</li>
-          <li>Motif size, small</li>
-          <li>18” long</li>
-          <li>Carat total weight .14</li>
-          <li>Product Number: 82728119</li>
-        </ul>
+        <div class="detail-list">
+          <ol class="description-details">
+            <li>18k rose gold with pink sapphires</li>
+            <li>Motif size, small</li>
+            <li>18” long</li>
+            <li>Carat total weight .14</li>
+            <li>Product Number: 82728119</li>
+          </ol>
+        </div>
       </div>
 
       <hr class="greenline-extracontent" />

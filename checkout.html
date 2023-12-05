@@ -121,22 +121,20 @@
             <hr />
           </h2>
 
-          <label for="methods" class="methods-pay">
-            <input type="checkbox" class="input-container" />
-            <i class="fa-brands fa-cc-paypal fa-xl"></i>
-            <span class="mark"></span>
+          <label class="methods-pay"
+            ><i class="fa-brands fa-cc-paypal fa-xl"></i>
+            <input type="radio" checked="checked" name="radio" />
+            <span class="checkmark"></span>
           </label>
-
-          <label for="methods" class="methods-pay">
-            <input type="checkbox" class="input-container" />
-            <i class="fa-solid fa-credit-card"></i>
-            <span class="mark"></span>
+          <label class="methods-pay"
+            ><i class="fa-solid fa-credit-card"></i>
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
           </label>
-
-          <label for="methods" class="methods-pay">
-            <input type="checkbox" class="input-container" />
-            Klarna
-            <span class="mark"></span>
+          <label class="methods-pay"
+            >Klarna
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
           </label>
         </div>
         <div id="checkout-container">
@@ -156,15 +154,14 @@
             Shipping Method
             <hr />
           </h2>
-          <label for="methods" class="methods-pay">
-            <input type="checkbox" class="input-container" />
-            In Person
+          <label class="shipping-method"
+            >By Shippment
+            <input type="radio" checked="checked" name="radio" />
             <span class="mark"></span>
           </label>
-
-          <label for="methods" class="methods-pay">
-            <input type="checkbox" class="input-container" />
-            By Shipment
+          <label class="shipping-method"
+            >In Person
+            <input type="radio" name="radio" />
             <span class="mark"></span>
           </label>
         </div>
@@ -195,7 +192,7 @@
           </h2>
 
           <div class="gift-dropdown">
-            <button class="dropbtn">
+            <button class="drop-button">
               Customize my Gift Message <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
