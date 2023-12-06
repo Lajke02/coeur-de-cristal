@@ -170,7 +170,7 @@ i {
   width: 70%;
   height: 80%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 2px;
   padding-left: 10%;
 }
 
@@ -188,7 +188,7 @@ i {
   font-weight: 500;
   font-family: "Karla", sans-serif;
   border: 2px solid white;
-  padding: 12px 25px;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
