@@ -308,7 +308,7 @@ figure {
   position: fixed;
   z-index: 1;
   left: 40;
-  top: 30;
+  top: 0;
   overflow: auto;
 }
 
@@ -551,6 +551,7 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   float: left;
@@ -742,15 +743,34 @@ ul {
     color: #000000;
   }
   .checkout-footer {
-    display: flex;
-    padding: 10px;
-    bottom: -170px;
+    background-color: #0f420e;
+    position: relative;
+    bottom: -200;
+    margin-top: 30px;
+    margin-left: 0px;
+    padding: 0px;
     width: auto;
+    display: block;
+    justify-content: center;
   }
   .checkoutfooter-container {
-    display: block;
-
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .checkout-footer a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .checkoutfooter-content {
+    margin-left: 50px;
+    margin-right: 100px;
+    padding: 0;
+    margin-right: 10px;
+    flex: 1 1 10%;
+    color: black;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "Karla", sans-serif;
   }
 }
 .checkoutcontainer {
@@ -1145,26 +1165,58 @@ li {
 .checkout-footer {
   background-color: #0f420e;
   position: relative;
-  bottom: -170px;
-  margin: 0;
+  bottom: -200;
+  margin-top: 100px;
+  margin-left: 0px;
+  padding: 10px;
   width: auto;
+  /* the following code was adapted by https://www.youtube.com/watch?v=5WoQm7tR6EA 2023-12-6*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .checkoutfooter-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 0px;
-  color: white;
-
-  font-size: 16px;
-  font-weight: lighter;
-  font-family: "Karla", sans-serif;
 }
 .checkout-footer a {
   color: #ffffff;
   text-decoration: underline;
 }
 .checkoutfooter-content {
-  margin-left: 0px;
+  margin-left: 50px;
+  margin-right: 100px;
+  padding: 0;
+
+  flex: 1 1 10%;
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: "Karla", sans-serif;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 440px) {
+  .checkout-footer {
+    padding: 0px;
+    background-color: #0f420e;
+    position: absolute;
+    width: 100%;
+    bottom: -970px;
+    margin-left: 0;
+  }
+  .checkoutfooter-container {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "Karla", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .checkoutfooter-content {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 /* Checkout Pop-up */
