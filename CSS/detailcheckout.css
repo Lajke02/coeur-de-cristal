@@ -502,7 +502,7 @@ figure {
     position: fixed;
     z-index: 1;
     left: 0;
-    top: 0;
+    top: 150px;
     overflow: scroll;
   }
   .popup img {
@@ -1117,7 +1117,7 @@ li {
     margin-left: auto;
   }
   .down-arrow {
-    background-color: none;
+    background-color: #d9d9d9;
     color: none;
     border: none;
     cursor: pointer;

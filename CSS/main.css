@@ -631,7 +631,7 @@ button {
     margin-left: auto;
   }
   .down-arrow {
-    background-color: none;
+    background-color: #d9d9d9;
     color: none;
     border: none;
     cursor: pointer;
