@@ -89,6 +89,7 @@ i {
     width: 80%;
     padding: 20px;
     background-color: #d9d9d9;
+    opacity: 0.4;
     margin-left: auto;
     margin-right: auto;
   }
@@ -122,7 +123,6 @@ i {
   #toggler:checked ~ .menu-phone {
     display: block;
   }
-
   .menu-phone ul {
     list-style-type: none;
     padding: 0;
@@ -631,8 +631,13 @@ button {
     margin-left: auto;
   }
   .down-arrow {
+<<<<<<< Updated upstream
     background-color: #d9d9d9;
     color: none;
+=======
+    background: color #848484;
+    color: black;
+>>>>>>> Stashed changes
     border: none;
     cursor: pointer;
     padding: 4px;
@@ -660,7 +665,7 @@ button {
   .panel {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #d9d9d9;
     min-width: 160px;
     overflow: auto;
     z-index: 1;
