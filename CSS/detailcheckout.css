@@ -461,28 +461,11 @@ figure {
     margin: 5px;
   }
 
-  .greenline-extracontent {
-    display: grid;
-    grid-row: inherit;
-    background-color: #0f420e;
-    height: 1px;
-    width: auto;
-    border: none;
+  .extra-container {
+    visibility: hidden;
   }
   .extraproducts-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-
-    margin-left: 25px;
-  }
-
-  .extraproducts-container img {
-    width: 300px;
-  }
-
-  .extraproductscontainer-figcaption {
-    font-family: "karla", sans-serif;
-    font-size: 16px;
+    display: none;
   }
 
   .popupmodal {
@@ -742,36 +725,6 @@ ul {
     margin-bottom: 10px;
     color: #000000;
   }
-  .checkout-footer {
-    background-color: #0f420e;
-    position: relative;
-    bottom: -200;
-    margin-top: 30px;
-    margin-left: 0px;
-    padding: 0px;
-    width: auto;
-    display: block;
-    justify-content: center;
-  }
-  .checkoutfooter-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .checkout-footer a {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  .checkoutfooter-content {
-    margin-left: 50px;
-    margin-right: 100px;
-    padding: 0;
-    margin-right: 10px;
-    flex: 1 1 10%;
-    color: black;
-    font-size: 16px;
-    font-weight: lighter;
-    font-family: "Karla", sans-serif;
-  }
 }
 .checkoutcontainer {
   margin-bottom: 10px;
@@ -952,8 +905,10 @@ ul {
   background-color: #d9d9d9;
   padding: 20px;
   width: auto;
-  bottom: 0;
+  bottom: -170;
   position: relative;
+  padding-top: 0px;
+  padding-bottom: 10px;
 }
 
 #logofooter {
@@ -990,7 +945,9 @@ ul {
   font-weight: 200;
   font-size: 16px;
 }
-
+.footerline {
+  visibility: hidden;
+}
 .mail {
   display: block;
   padding: 7px 80px;
@@ -1029,6 +986,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .row {
@@ -1078,6 +1036,16 @@ li {
   }
 }
 @media only screen and (min-width: 390px) and (max-width: 440px) {
+  .footerline {
+    visibility: visible;
+    bottom: -200;
+    background-color: #0f420e;
+    width: auto;
+
+    margin: 0;
+    height: 5px;
+  }
+
   .row {
     flex: 1 1 100%;
     margin-right: 0;
@@ -1085,6 +1053,8 @@ li {
   }
   #detailpagefooter {
     padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .row li {
     display: none;
