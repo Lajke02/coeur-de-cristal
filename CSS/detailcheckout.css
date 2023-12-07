@@ -193,8 +193,20 @@ i {
   font-family: "Karla", sans-serif;
   margin-top: 15px;
   margin-bottom: 15px;
+  margin-left: 10px;
+}
+.detailpagebody h4 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
 }
 
+.fa-solid fa-truck-fast {
+  margin-right: 10px;
+}
 .menuforthepreviouspage {
   display: flex;
   list-style: none;
@@ -426,12 +438,20 @@ figure {
     font-weight: 100;
     margin-bottom: 0px;
   }
+
   .detailpagebody {
     display: grid;
     grid-row: inherit;
     font-size: 18px;
     font-weight: 200;
     font-family: "Karla", sans-serif;
+  }
+  .detailpagebody h4 {
+    margin-left: 0px;
+  }
+  .fa-solid .fa-truck-fast {
+    margin-right: 0px;
+    padding: 0;
   }
 
   #addtobagbutton {
