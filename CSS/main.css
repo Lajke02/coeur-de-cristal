@@ -170,7 +170,7 @@ i {
   width: 70%;
   height: 80%;
   box-sizing: border-box;
-  padding: 2px;
+  padding: 20px;
   padding-left: 10%;
 }
 
@@ -188,7 +188,7 @@ i {
   font-weight: 500;
   font-family: "Karla", sans-serif;
   border: 2px solid white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   text-decoration: none;
 }
 
@@ -832,7 +832,8 @@ button {
 /* Shopping Bag */
 #square-order {
   border: solid black;
-  padding: 5rem;
+  padding: 7rem;
+  padding-bottom: 2rem;
   width: 20%;
   float: right;
   padding-top: 0%;
@@ -841,17 +842,19 @@ button {
   position: relative;
   align-items: center;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   #square-order {
     float: none;
-    width: 60%;
-    margin-right: 2rem;
+    width: 50%;
+    margin-right: 50%;
+    margin-left: 3rem;
   }
   #pricepoint {
     font-family: "Karla", sans-serif;
     font-size: 16pt;
     display: flex;
-    margin-left: 1%;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   #item {
     font-family: "Karla", sans-serif;
@@ -861,13 +864,13 @@ button {
     border-bottom: solid#d9d9d9;
     margin-top: 0%;
     margin-bottom: 0%;
-    margin-left: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .checkout-btn {
     font-family: "Karla", sans-serif;
     font-size: 16pt;
     border: 2px solid black;
-    padding: 10px 20px;
     bottom: -50px;
     margin-bottom: 2rem;
     position: center;
@@ -901,12 +904,15 @@ button {
 
 .checkout-btn {
   font-family: "Karla", sans-serif;
-  font-size: 20pt;
+  font-size: 14pt;
   border: 2px solid black;
-  padding: 12px 25px;
+  padding: 10px 10%;
   bottom: -50px;
   margin-bottom: 2rem;
   position: center;
+  background-color: #000000;
+  color: white;
+  margin-left: 2rem;
 }
 
 .checkout-btn:hover {
@@ -919,7 +925,7 @@ button {
   padding-top: 0%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .order-title {
     width: 80%;
     margin-left: 0%;
@@ -968,48 +974,75 @@ button {
   color: darkgrey;
   text-decoration: none;
 }
+
 #necklacerow {
   display: grid;
-  grid-template-areas: "img img img img";
-  margin-left: 0%;
-  margin-right: 0%;
-  padding-left: 2rem;
-  width: 50%;
+  grid-template-areas: "img img img";
+  width: 75%;
+  margin-left: 1rem;
 }
+
 @media screen and (max-width: 800px) {
   #necklacerow {
     display: grid;
     grid-template-areas: "img img";
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 1rem;
-    margin-right: 2rem;
-    width: 80%;
+    width: 100%;
+    margin-left: 1rem;
   }
 }
-.addingnecklaces {
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-decoration: none;
-  grid-area: img;
-  margin-left: 2rem;
+
+.likebutton {
+  color: #000000;
 }
 
-#necklacerow,
-.addingnecklaces {
-  padding-left: 0%;
+.likebutton:hover {
+  animation-name: heartbeat;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 
-.producttext {
-  margin-left: 2rem;
-  font-size: medium;
+@keyframes heartbeat {
+  0% {
+    color: #000000;
+  }
+
+  15% {
+    color: pink;
+    transform: scale(1, 2);
+  }
+
+  30% {
+    color: red;
+    transform: scale(1, 0);
+  }
+
+  40% {
+    transform: scale(1, 2);
+    color: pink;
+  }
+
+  50% {
+    transform: scale(1, 0);
+    color: red;
+  }
+
+  70% {
+    transform: scale(1, 2);
+    color: pink;
+  }
+
+  80% {
+    transform: scale(1, 0);
+    color: red;
+  }
+
+  100% {
+    transform: scale(1, 0);
+    color: #000000;
+  }
 }
 
-.cross {
-  float: right;
-}
 /*Detaile Page*/
 
 .costofproduct {
@@ -1150,41 +1183,4 @@ figure {
 .extraproductscontainer-figcaption {
   font-family: "karla", sans-serif;
   font-size: 16px;
-}
-
-.ani {
-  animation-name: beat;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes beat {
-  15% {
-    transform: rotate(-15deg);
-  }
-
-  30% {
-    transform: rotate(15deg);
-  }
-
-  50% {
-    transform: rotate(-15deg);
-  }
-
-  60% {
-    transform: rotate(15deg);
-  }
-
-  70% {
-    transform: rotate(-15deg);
-  }
-
-  80% {
-    transform: rotate(15deg);
-  }
-
-  100% {
-    transform: rotate(-15deg);
-  }
 }
