@@ -28,11 +28,7 @@ header {
   font-weight: 400;
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 414px) {
-=======
 @media only screen and(max-width: 414px) {
->>>>>>> 3e5af55c060f6d5233d4cc0d6bc47258e547697e
   #Logo {
     width: 30%;
     margin-left: 0;
