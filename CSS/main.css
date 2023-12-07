@@ -934,8 +934,8 @@ button {
   #square-order {
     float: none;
     width: 50%;
-    margin-right: 50%;
-    margin-left: 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
   #pricepoint {
     font-family: "Karla", sans-serif;
@@ -968,6 +968,10 @@ button {
   #orderimg {
     float: none;
     width: 100%;
+  }
+  #mainorder {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
