@@ -842,40 +842,6 @@ button {
   position: relative;
   align-items: center;
 }
-@media screen and (max-width: 1200px) {
-  #square-order {
-    float: none;
-    width: 50%;
-    margin-right: 50%;
-    margin-left: 3rem;
-  }
-  #pricepoint {
-    font-family: "Karla", sans-serif;
-    font-size: 16pt;
-    display: flex;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  #item {
-    font-family: "Karla", sans-serif;
-    font-size: 16pt;
-    display: flex;
-    border-top: solid#d9d9d9;
-    border-bottom: solid#d9d9d9;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .checkout-btn {
-    font-family: "Karla", sans-serif;
-    font-size: 16pt;
-    border: 2px solid black;
-    bottom: -50px;
-    margin-bottom: 2rem;
-    position: center;
-  }
-}
 
 #smallordertitle {
   font-family: "Cormorant Garamond", serif;
@@ -925,24 +891,6 @@ button {
   padding-top: 0%;
 }
 
-@media screen and (max-width: 1200px) {
-  .order-title {
-    width: 80%;
-    margin-left: 0%;
-    padding-top: 2rem;
-    margin-bottom: 0, 5rem;
-  }
-  #orderimg {
-    width: 80%;
-    float: none;
-    padding-right: 2rem;
-  }
-  #maintext {
-    margin-right: 0%;
-    margin-bottom: 0%;
-  }
-}
-
 .order-title {
   font-family: "Cormorant Garamond", serif;
   font-size: x-large;
@@ -980,6 +928,47 @@ button {
   grid-template-areas: "img img img";
   width: 75%;
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #square-order {
+    float: none;
+    width: 50%;
+    margin-right: 50%;
+    margin-left: 0;
+  }
+  #pricepoint {
+    font-family: "Karla", sans-serif;
+    font-size: 16pt;
+    display: flex;
+    margin-right: 2rem;
+  }
+  #item {
+    font-family: "Karla", sans-serif;
+    font-size: 16pt;
+    display: flex;
+    border-top: solid#d9d9d9;
+    border-bottom: solid#d9d9d9;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .checkout-btn {
+    font-family: "Karla", sans-serif;
+    font-size: medium;
+    border: 2px solid black;
+    bottom: -50px;
+    margin-bottom: 2rem;
+    position: center;
+    margin-left: 0%;
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #orderimg {
+    float: none;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
