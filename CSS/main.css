@@ -70,12 +70,12 @@ i {
 .menu-phone {
   display: none;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .navbar {
     gap: 5rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .navbar {
     display: none;
   }
@@ -143,7 +143,7 @@ i {
 }
 
 /* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media only screen and (max-width: 1200px) {
   label {
     top: 50px;
     left: -10px;
