@@ -691,6 +691,8 @@ button {
   font-style: italic;
   text-align: center;
 }
+
+/* some of the code in the following slider is based on the code in the following W3Schools link: https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
 .category-slider {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
