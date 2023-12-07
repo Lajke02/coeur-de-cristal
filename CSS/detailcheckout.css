@@ -1,5 +1,4 @@
-/* header*/
-
+/* header */
 header {
   display: flex;
   align-items: center;
@@ -87,6 +86,7 @@ i {
     width: 80%;
     padding: 20px;
     background-color: #d9d9d9;
+    opacity: 0.4;
     margin-left: auto;
     margin-right: auto;
   }
@@ -120,7 +120,6 @@ i {
   #toggler:checked ~ .menu-phone {
     display: block;
   }
-
   .menu-phone ul {
     list-style-type: none;
     padding: 0;
@@ -603,8 +602,9 @@ ul {
   font-family: "lato", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 18px;
-  margin-left: 20px;
+  margin-top: 0px;
+
+  margin-left: -250px;
 }
 .purchase-button {
   background-color: #000000;
@@ -715,7 +715,7 @@ ul {
     border: 0.5px solid #000000;
     width: 80%;
     margin-bottom: 0.5rem;
-    margin-left: 1.3rem;
+    margin-left: 2.5rem;
     cursor: pointer;
   }
   .purchase-text {
@@ -1054,7 +1054,7 @@ li {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 440px) {
+@media only screen and (max-width: 768px) {
   .latest {
     bottom: 30px;
   }
@@ -1065,26 +1065,14 @@ li {
     bottom: 0px;
   }
 }
-@media only screen and (min-width: 390px) and (max-width: 440px) {
-  .footerline {
-    visibility: visible;
-    bottom: -200;
-    background-color: #0f420e;
-    width: auto;
-
-    margin: 0;
-    height: 5px;
-  }
-
+@media only screen and (max-width: 414px) {
   .row {
     flex: 1 1 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
-  #detailpagefooter {
+  footer {
     padding-bottom: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .row li {
     display: none;
@@ -1098,6 +1086,7 @@ li {
   #button .down-arrow i {
     display: flex;
   }
+
   .socials {
     align-items: center;
   }
