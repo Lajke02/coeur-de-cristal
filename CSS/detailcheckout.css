@@ -25,7 +25,7 @@ header {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   #Logo {
     width: 30%;
     margin-left: 0;
@@ -140,7 +140,7 @@ i {
 }
 
 /* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   label {
     top: 50px;
     left: -10px;
@@ -298,6 +298,8 @@ ol {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   padding-left: 5px;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 figure {
@@ -407,12 +409,12 @@ figure {
   display: grid;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .nacklaceimg-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    float: left;
+    float: none;
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
@@ -422,7 +424,7 @@ figure {
     height: auto;
   }
   .text-container {
-    float: left;
+    float: none;
     margin-left: 5px;
     margin-right: 5px;
   }

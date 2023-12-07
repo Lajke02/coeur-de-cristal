@@ -28,7 +28,7 @@ header {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   #Logo {
     width: 30%;
     margin-left: 0;
@@ -215,7 +215,7 @@ i {
   display: none;
 }
 
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   .main-content {
     display: none;
   }
@@ -305,7 +305,7 @@ i {
     margin-top: 70%;
   }
 }
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   #goldbox {
     width: 10%;
   }
@@ -357,7 +357,7 @@ i {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 390px) and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   .content3 {
     grid-template-columns: 1fr;
     grid-gap: 40px;
